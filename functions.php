@@ -961,8 +961,8 @@ function  getItemPick($dir){
     if($data[0] === 'break'){
     break;
     } else{
-      
-      echo ' <div class="item__pick-display '.$data[0].'">';
+		$colorClass = explode(".",$data[0]);
+      echo ' <div class="item__pick-display '.$colorClass[0].'">';
       echo '<div class="item__pick-display-front">';
       getImg($dir,$data[0],'item__pick-display-front__img');
       echo '</div>
@@ -986,8 +986,8 @@ function  getItemColorPicker($dir){
     if($data[0] === 'break'){
     break;
     } else{
-      
-      echo ' <div class="item__color-picker '.$data[0].'">';
+	$colorClass = explode(".",$data[0]);
+      echo ' <div class="item__color-picker '.$colorClass[0].'">';
       getImg($dir,$data[0],'item__color-picker__img');
       echo '</div>';
 

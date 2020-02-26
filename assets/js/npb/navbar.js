@@ -23,59 +23,11 @@ jQuery(document).ready(function() {
     var adminTools = true;
   }
  
-
   var prevScrollpos = jQuery(window).scrollTop();
-  // jQuery(window).on('scroll resize',function() {
-  //   var currentScrollPos = jQuery(window).scrollTop();
-  //   getHeaderHight();
-
-  //   if (currentScrollPos >= headerHeight) {
-  //     jQuery("#site-header").addClass("navfix");
-  //   }
-  //   if (currentScrollPos < headerHeight) {
-  //     if (adminTools) {
-  //       jQuery(".navfix").css("top", 0);
-  //     }
-  //     jQuery("#site-header").removeClass("navfix");
-  //   }
-
-  //   if (headerHeight == 0 && currentScrollPos == 0) {
-  //     jQuery("#site-header").removeClass("navfix");
-  //     jQuery("#site-header").css("top", 0);
-  //   }
-  //   if (
-  //     headerHeight + navHeight > currentScrollPos ||
-  //     prevScrollpos > currentScrollPos
-  //   ) {
-  //     if (adminTools) {
-  //       jQuery(".navfix").css("top", "32px");
-  //     } else {
-  //       jQuery(".navfix").css("top", 0);
-  //     }
-  //   } else {
-  //     jQuery(".navfix").css("top", "-62px");
-  //   }
-  //   prevScrollpos = currentScrollPos;
-  // });
-
+ 
   jQuery(window).on('scroll resize',function() {
     var currentScrollPos = jQuery(window).scrollTop();
     getHeaderHight();
-
-    // if (currentScrollPos >= headerHeight) {
-    //   jQuery("#site-header").addClass("navfix");
-    // }
-    // if (currentScrollPos < headerHeight) {
-    //   if (adminTools) {
-    //     jQuery(".navfix").css("top", 0);
-    //   }
-    //   jQuery("#site-header").removeClass("navfix");
-    // }
-
-    // if (headerHeight == 0 && currentScrollPos == 0) {
-    //   jQuery("#site-header").removeClass("navfix");
-    //   jQuery("#site-header").css("top", 0);
-    // }
 
     if (
       headerHeight + navHeight > currentScrollPos ||
@@ -89,7 +41,6 @@ jQuery(document).ready(function() {
     } else {
       jQuery("#site-header").css("top", "-62px");
     }
-
 
     prevScrollpos = currentScrollPos;
 

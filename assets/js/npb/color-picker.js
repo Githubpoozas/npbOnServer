@@ -1,18 +1,10 @@
 jQuery(document).ready(function() {
+  jQuery(".item__pick-display:first-child").css('display','grid');
   jQuery(".item__color-picker").click(function() {
-    var image1 = jQuery(this)
-      .children("img")
-      .attr("src");
-    var image2 = jQuery(this)
-      .children("img")
-      .attr("src")
-      .replace("_1", "_2");
-
-    jQuery(".item__front")
-      .children("img")
-      .attr("src", image1);
-    jQuery(".item__back")
-      .children("img")
-      .attr("src", image2);
+    var clothColorClass = ".item__pick-display." + jQuery(this)
+        .attr("class")
+        .split(" ")[1];
+    jQuery(".item__pick-display").css('display','none');
+    jQuery(clothColorClass).css('display','grid');
   });
 });
