@@ -680,7 +680,7 @@ input[type="checkbox"] {
 	box-shadow: none;
 	cursor: pointer;
 }
-
+*/
 input[type="checkbox"]:checked::before {
 	/* Use the "Yes" SVG Dashicon */
 content: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%23000000%27%2F%3E%3C%2Fsvg%3E");
@@ -691,7 +691,7 @@ height: 1.75rem;
 width: 1.75rem;
 }
 
-*/ input,
+input,
 textarea,
 button,
 .button,
@@ -2540,8 +2540,8 @@ h2.entry-title {
     width: calc(100% - 5rem);
 }
 
-*/
-/* .post-inner {
+
+.post-inner {
 	padding-top: 5rem;
 }
 
@@ -2766,6 +2766,7 @@ h2.entry-title {
 
 
 /* Block Font Families ----------------------- */
+
 
 
 
@@ -6263,11 +6264,6 @@ a.to-the-top>* {
     text-align: center;
 }
 
-
-.lazy {
-    background-color: #EAEDED;
-}
-
 /* Typo --------------------------------------------------------------------------*/
 
 p {
@@ -6280,18 +6276,6 @@ li {
 
 body {
     line-height: 1.7;
-}
-
-body:lang(en) {
-    font-family: "Lato", sans-serif !important;
-    ;
-    font-weight: 400;
-}
-
-*:lang(th) {
-    font-family: "Kanit", sans-serif !important;
-    ;
-    font-weight: 400;
 }
 
 main {
@@ -6950,6 +6934,7 @@ ul.primary-menu {
     font-family: "Kanit", sans-serif;
     margin-bottom: 0;
     line-height: 1;
+    color: #204287;
 }
 
 .seemore__icon-more {

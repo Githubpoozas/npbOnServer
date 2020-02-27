@@ -800,14 +800,14 @@ function getImg($dir,$neededImg,$imgClass){
 }
 
 // get Gallery top and thumb
-function getGallery($dir,$csvFile){
+function getGallery($dir){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
 
     echo
     '
     <div class="swiper-container gallery-thumbs detail-thumb">
               <div class="swiper-wrapper detail-thumb__wrapper">';
-              $csv = fopen($csvPath.$csvFile,'r');
+              $csv = fopen($csvPath.'Book1.csv','r');
                 while (($data = fgetcsv($csv)) !== FALSE) {
                   $data = str_replace("\xEF\xBB\xBF",'',$data); 
                   if($data[8] === 'break'){
@@ -825,7 +825,7 @@ function getGallery($dir,$csvFile){
     
         <div class="swiper-container gallery-top detail-top">
           <div class="swiper-wrapper detail-top__wrapper">';
-    $csv = fopen($csvPath.$csvFile,'r');
+    $csv = fopen($csvPath.'Book1.csv','r');
                 while (($data = fgetcsv($csv)) !== FALSE) {
                   $data = str_replace("\xEF\xBB\xBF",'',$data); 
     
@@ -845,11 +845,11 @@ function getGallery($dir,$csvFile){
 
 
 
-function getDescription($dir,$csvFile){
+function getDescription($dir){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
 
    echo '<div class="detail-description__text">';
-    $csv = fopen($csvPath.$csvFile,'r');
+    $csv = fopen($csvPath.'Book1.csv','r');
     while (($data = fgetcsv($csv)) !== FALSE) {
       $data = str_replace("\xEF\xBB\xBF",'',$data); 
       if($data[9] === 'break'){
@@ -859,7 +859,7 @@ function getDescription($dir,$csvFile){
       }
     }
 
-    $csv = fopen($csvPath.$csvFile,'r');
+    $csv = fopen($csvPath.'Book1.csv','r');
     while (($data = fgetcsv($csv)) !== FALSE) {
       $data = str_replace("\xEF\xBB\xBF",'',$data); 
 
@@ -874,7 +874,7 @@ function getDescription($dir,$csvFile){
 
 }
 
-function getSizeTable($dir,$csvFile){
+function getSizeTable($dir){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
 
     echo '<div class="detail-description__size-table u-margin-bottom-small">
@@ -892,7 +892,7 @@ function getSizeTable($dir,$csvFile){
 
      <tr>';
 
-    $csv = fopen($csvPath.$csvFile,'r');
+    $csv = fopen($csvPath.'Book1.csv','r');
     while (($data = fgetcsv($csv)) !== FALSE) {
       $data = str_replace("\xEF\xBB\xBF",'',$data); 
       if($data[11] === 'break'){
@@ -915,7 +915,7 @@ echo '</table>
       </tr>
       <tr>';
 
-    $csv = fopen($csvPath.$csvFile,'r');
+    $csv = fopen($csvPath.'Book1.csv','r');
     while (($data = fgetcsv($csv)) !== FALSE) {
       $data = str_replace("\xEF\xBB\xBF",'',$data); 
       if($data[12] === 'break'){
@@ -934,11 +934,11 @@ echo '
   fclose($csv);
 }
 
-function getDescription2($dir,$csvFile){
+function getDescription2($dir){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
 
   echo '<div class="detail-description__text">';
-    $csv = fopen($csvPath.$csvFile,'r');
+    $csv = fopen($csvPath.'Book1.csv','r');
     while (($data = fgetcsv($csv)) !== FALSE) {
       $data = str_replace("\xEF\xBB\xBF",'',$data); 
       if($data[13] === 'break'){
@@ -951,11 +951,11 @@ function getDescription2($dir,$csvFile){
   fclose($csv);
 }
 
-function  getItemPick($dir,$csvFile){
+function  getItemPick($dir){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
 
   echo '<div class="item__pick">';
-  $csv = fopen($csvPath.$csvFile,'r');
+  $csv = fopen($csvPath.'Book1.csv','r');
   while (($data = fgetcsv($csv)) !== FALSE) {
     $data = str_replace("\xEF\xBB\xBF",'',$data); 
     if($data[0] === 'break'){
@@ -976,11 +976,11 @@ echo '</div>';
 fclose($csv);
 }
 
-function  getItemColorPicker($dir,$csvFile){
+function  getItemColorPicker($dir){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
 
   echo '<div class="item__color">';
-  $csv = fopen($csvPath.$csvFile,'r');
+  $csv = fopen($csvPath.'Book1.csv','r');
   while (($data = fgetcsv($csv)) !== FALSE) {
     $data = str_replace("\xEF\xBB\xBF",'',$data); 
     if($data[0] === 'break'){
@@ -997,14 +997,14 @@ echo '</div>';
 fclose($csv);
 }
 
-function getItemSection($dir,$csvFile,$gender,$otherURL){
+function getItemSection($dir,$gender,$otherURL){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
-$fileName = $csvPath.$csvFile;
+$fileName = $csvPath.'Book1.csv';
 if ( file_exists($fileName) && ($fp = fopen($fileName, "rb"))!==false  ) {
 	$gender = strtolower($gender);
 
   echo '<section class="item__section-detail underNav">';
-  getGallery($dir,$csvFile);
+  getGallery($dir);
 echo '   <div class="detail-description">
 <div class="detail-description__gender u-margin-bottom-small">';
 
@@ -1019,9 +1019,9 @@ if($gender === 'unisex'){
 } 
 
 echo '</div>';
-getDescription($dir,$csvFile);
-getSizeTable($dir,$csvFile);
-getDescription2($dir,$csvFile);
+getDescription($dir);
+getSizeTable($dir);
+getDescription2($dir);
 echo '<div class="shareToSocial">
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script
@@ -1034,8 +1034,8 @@ echo '<div class="shareToSocial">
 </div>
 </section>
 <section class="item__section-color u-margin-bottom-medium">';
-getItemPick($dir,$csvFile);
-getItemColorPicker($dir,$csvFile);
+getItemPick($dir);
+getItemColorPicker($dir);
 }
   else
   {
@@ -1045,9 +1045,9 @@ getItemColorPicker($dir,$csvFile);
 echo '</section>';
 }
 
-function getProductSection($dir,$csvFile,$seemore){
+function getProductSection($dir,$seemore){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
-$fileName = $csvPath.$csvFile;
+$fileName = $csvPath.'Book1.csv';
 if ( file_exists($fileName) && ($fp = fopen($fileName, "rb"))!==false  ) {
     $csv = fopen($fileName,'r');
 
@@ -1127,9 +1127,9 @@ echo '
 fclose($csv);
 }
 
-function getProject($dir,$csvFile,$primary,$secondary){
+function getProject($dir,$primary,$secondary){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
-$fileName = $csvPath.$csvFile;
+$fileName = $csvPath.'Book1.csv';
 if ( file_exists($fileName) && ($fp = fopen($fileName, "rb"))!==false  ) {
     $csv = fopen($fileName,'r');
 

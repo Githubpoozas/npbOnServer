@@ -1,19 +1,20 @@
 jQuery(document).ready(function() {
   //slide 3
   var product = new Swiper(".swiper-container__slide3", {
-    // allowTouchMove: true,
-    slidesPerView: 1,
+    slidesPerView: "auto",
     slidesPerGroup: 1,
-
+    spaceBetween: 3,
     breakpoints: {
-      900: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 50
-      },
       600: {
         slidesPerView: 2,
         slidesPerGroup: 2,
+        spaceBetween: 5,
+      },
+      900: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 10,
+        simulateTouch:false
       }
     },
 
@@ -134,71 +135,37 @@ jQuery(document).ready(function() {
           .find(".swiper-slide__slide3:nth-child(even)")
           .css("margin-right", marginRight);
       }
-      
     }
   });
 
-  jQuery(".cloth__img:not(:first-child)").hide();
-  jQuery(".cloth").on("mouseenter", function() {
-    jQuery(":nth-child(1)", this).hide();
-    jQuery(":nth-child(2)", this).show();
-  });
-  jQuery(".cloth").on("mouseleave", function() {
-    jQuery(":nth-child(1)", this).show();
-    jQuery(":nth-child(2)", this).hide();
-  });
-
-  if (window.matchMedia("(max-width: 800px").matches) {
-    setInterval(function() {
-      jQuery(":nth-child(1)", ".cloth").hide();
-      jQuery(":nth-child(2)", ".cloth").show();
-    }, 3000);
-    setInterval(function() {
-      jQuery(":nth-child(1)", ".cloth").show();
-      jQuery(":nth-child(2)", ".cloth").hide();
-    }, 6000);
-  }
-
-  // on load hide .seemore if last slide already in viewpoint
-  function seemoreHide() {
-    var slideWidth = jQuery(".swiper-slide__slide3").outerWidth(true);
-    var windowWidth = jQuery(window).width();
-    jQuery(".swiper-wrapper__slide3").each(function() {
-      var lastSlide = jQuery(this).find(".swiper-slide__slide3").length - 1;
-      var lastSlidePosition =
-        jQuery(this)
-          .find(".swiper-slide__slide3")
-          .eq(lastSlide)
-          .offset().left + slideWidth;
-      if (
-        lastSlidePosition <= windowWidth &&
-        jQuery(this)
-          .parent()
-          .find(".seemore__more")
-          .is(":visible") &&
-        jQuery(this).css("flex-wrap", "nowrap")
-      ) {
-        jQuery(this)
-          .parent()
-          .find(".seemore")
-          .hide();
-      } else if (
-        lastSlidePosition > windowWidth &&
-        jQuery(this)
-          .parent()
-          .find(".seemore__more")
-          .is(":hidden") &&
-        jQuery(this).css("flex-wrap", "nowrap")
-      ) {
-        jQuery(this)
-          .parent()
-          .find(".seemore")
-          .show();
-      }
-    });
-  }
-  seemoreHide();
   jQuery(window).resize(function() {
-    seemoreHide();
+    var windowSize = window.innerWidth;
+
+    if (windowSize >= 900) {
+      jQuery(".slideWrap")
+        .find(".swiper-slide__slide3:nth-child(3n+0)")
+        .css("margin-right", "0");
+    } else if (windowSize < 900 && windowSize >= 600) {
+      jQuery(".slideWrap")
+        .find(".swiper-slide__slide3:nth-child(even)")
+        .css("margin-right", "0");
+    }
+  });
+
+  jQuery(".cloth__img").mouseenter(function() {
+    jQuery(this).attr(
+      "src",
+      jQuery(this)
+        .attr("src")
+        .replace("_1", "_2")
+    );
+  });
+  jQuery(".cloth__img").mouseleave(function() {
+    jQuery(this).attr(
+      "src",
+      jQuery(this)
+        .attr("src")
+        .replace("_2", "_1")
+    );
   });
 });
