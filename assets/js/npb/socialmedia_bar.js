@@ -10,8 +10,6 @@ jQuery(document).ready(function() {
       jQuery(".socialmedia__item").animate({opacity: '1'},"slow");
       jQuery(".socialmedia__icon").animate({margin: '8px 7px 8px 22px'},"slow");
 
-
-
     } else {
       jQuery(".socialmedia").animate({right: '-22px'},"slow");
       jQuery(".socialmedia__rotated").animate({opacity: '1'},"slow");
@@ -21,21 +19,22 @@ jQuery(document).ready(function() {
 
     }
   });
-  jQuery('.wechat').on('click',function(){
-    jQuery('#wechatId').css('border','solid 2px red').fadeOut(500);
-    jQuery('#wechatId').fadeIn(500);
-    setTimeout(function(){
-      jQuery('#wechatId').css('border','solid 2px transparent');
-    },800);
-    setTimeout(function(){
-      jQuery('#wechatId').css('border','solid 2px red').fadeOut(500);
-      jQuery('#wechatId').fadeIn(500);
-      setTimeout(function(){
-        jQuery('#wechatId').css('border','solid 2px transparent');
-      },1000);
-    },1000);
-    
 
-  })
-console.log('socialmedia loaded')
 });
+function copyqr() {
+  var copyText = document.getElementById("wechatqr");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+function copyqr2() {
+  var copyText = document.getElementById("wechatqr2");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  var popup = document.getElementById("myPopup2");
+  popup.classList.toggle("show");
+}

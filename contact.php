@@ -23,14 +23,14 @@ get_header();
 
 	
 <section class="contactUs__section-contactForm form u-margin-bottom-big u-margin-top-big underNav">
-        <h2 class="heading-primary u-margin-bottom-medium" lang="th">ส่งข้อความถึงเรา</h2>
+        <h2 class="heading-primary u-margin-bottom-medium">ส่งข้อความถึงเรา</h2>
 
         <form action="#" method="GET">
           <div class="container">
             <div class="row">
               <div class="col-sm-12 col-md-12 u-margin-bottom-small">
-                <h2 class="heading-primary text-left" lang="th">
-                  ชื่อ-นามสกุล <span lang="en">(required)</span>
+                <h2 class="heading-primary text-left">
+                  ชื่อ-นามสกุล <span>(required)</span>
                 </h2>
                 <input
                   type="text"
@@ -39,12 +39,12 @@ get_header();
                   placeholder="ชื่อ - นามสกุล"
                   required
                   class="form__input"
-                  lang="th"
+                  
                 />
               </div>
               <div class="col-sm-12 col-md-7 u-margin-bottom-small">
-                <h2 class="heading-primary text-left" lang="th">
-                  อีเมล <span lang="en">(required)</span>
+                <h2 class="heading-primary text-left" >
+                  อีเมล <span >(required)</span>
                 </h2>
                 <input
                   type="email"
@@ -53,11 +53,11 @@ get_header();
                   name="email"
                   placeholder="NAME@EMAIL.COM"
                   required
-                  lang="th"
+                  
                 />
               </div>
               <div class="col-sm-12 col-md-5 u-margin-bottom-small">
-                <h2 class="heading-primary text-left" lang="th">
+                <h2 class="heading-primary text-left" >
                   เบอร์โทรศัพท์
                 </h2>
                 <input
@@ -66,12 +66,12 @@ get_header();
                   id="tel"
                   name="tel"
                   placeholder="08-888-8888 , 088-888-8888"
-                  lang="th"
+                  
                 />
               </div>
 
               <div class="col-sm-12 col-md-12 u-margin-bottom-medium">
-                <h2 class="heading-primary text-left" lang="th">
+                <h2 class="heading-primary text-left" >
                   ข้อความ
                 </h2>
                 <textarea
@@ -79,10 +79,10 @@ get_header();
                   class="form__input form-textarea"
                   id="message"
                   rows="5"
-                placeholder="ข้อความ" lang="th"></textarea>
+                placeholder="ข้อความ" ></textarea>
               </div>
               <div class="col-sm-12 col-md-12 u-margin-bottom-small">
-                <input type="submit" value="ส่งข้อมูล" class="form__submit">
+                <input type="submit" value="ส่งข้อมูล" class="form__submit form__submit-btn btn--gray btn-shadow">
               </div>
             </div>
           </div>
@@ -96,19 +96,9 @@ get_header();
       <section
         class="contactUs__section-googleMap googleMap u-margin-bottom-big"
       >
-        <div class="googleMap__mapouter">
-          <div class="googleMap__gmap_canvas">
-            <iframe
-              class="googleMap__iframe"
-              id="gmap_canvas"
-              src="https://maps.google.com/maps?q=%E0%B8%AA%E0%B8%A1%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B9%8C%20%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%A1%E0%B9%89%E0%B8%99&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-            ></iframe>
+          <div class="googleMap">
+          <iframe id="iframe_map" src="https://maps.google.com/maps?q=somboon%20garment&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
           </div>
-        </div>
       </section>
 
 </main><!-- #site-content -->

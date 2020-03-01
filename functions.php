@@ -230,8 +230,6 @@ function twentytwenty_register_scripts() {
 	wp_enqueue_script( 'size-table', get_template_directory_uri() . '/assets/js/npb/size-table.js', array('jquery'), $theme_version, true );
 	wp_enqueue_script( 'color-picker', get_template_directory_uri() . '/assets/js/npb/color-picker.js', array('jquery'), $theme_version, true );
 
-	
-
 
 }
 
@@ -1012,9 +1010,9 @@ if($gender === 'unisex'){
   echo '<a class="gender-btn"><button class="btn--gray detail-description__gender-btn">UNISEX</button></a>';
 } else if($gender === 'men') {
   echo "<a class='gender-btn'><button class='btn--gray detail-description__gender-btn'>MEN</button></a>";
-  echo "<a class='gender-btn' href='".$otherURL."'><button class='btn--gray btn--gray-light detail-description__gender-btn'>WOMEN</button></a>";
+  echo "<a class='gender-btn' href='".$otherURL."'><button class='btn--gray btn--gray-light detail-description__gender-btn' style='box-shadow: 2px 1000px #C8C8C8 inset !important;'>WOMEN</button></a>";
 } else if($gender === 'women') {
-  echo "<a class='gender-btn' href='".$otherURL."'><button class='btn--gray btn--gray-light  detail-description__gender-btn'>MEN</button></a>";
+  echo "<a class='gender-btn' href='".$otherURL."'><button class='btn--gray btn--gray-light  detail-description__gender-btn' style='box-shadow: 2px 1000px #C8C8C8 inset !important;'>MEN</button></a>";
   echo "<a class='gender-btn'><button class='btn--gray detail-description__gender-btn'>WOMEN</button></a>";
 } 
 
@@ -1051,7 +1049,7 @@ $fileName = $csvPath.$csvFile;
 if ( file_exists($fileName) && ($fp = fopen($fileName, "rb"))!==false  ) {
     $csv = fopen($fileName,'r');
 
-    echo '<section class="section-product u-margin-bottom-medium" id="tshirt">
+    echo '<section class="section-product u-margin-top-medium u-margin-bottom-medium" id="tshirt">
     <div class="container header section-product__header">
       <div class="row">
         <div class="col-sm-12 col-md-12">';
@@ -1063,7 +1061,7 @@ if ( file_exists($fileName) && ($fp = fopen($fileName, "rb"))!==false  ) {
             break;
             } else{
              echo '<h2 class="heading-primary ">'.$data[6].'</h2>
-              <h3 lang="th" class="heading-secondary">'.$data[7].'</h3>';
+              <h3 class="heading-secondary">'.$data[7].'</h3>';
             }
           }
   echo '
@@ -1133,12 +1131,12 @@ $fileName = $csvPath.$csvFile;
 if ( file_exists($fileName) && ($fp = fopen($fileName, "rb"))!==false  ) {
     $csv = fopen($fileName,'r');
 
-    echo '<section class="home__section-project u-margin-bottom-small">
+    echo '<section class="home__section-project u-margin-bottom-small u-margin-top-medium">
     <div class="container header">
     <div class="row">
       <div class="col-sm-12 col-md-12">
         <h2 class="heading-primary ">'.$primary.'</h2>
-        <h3 lang="th" class="heading-secondary">'.$secondary.'</h3>
+        <h3 class="heading-secondary">'.$secondary.'</h3>
       </div>
     </div>
   </div>

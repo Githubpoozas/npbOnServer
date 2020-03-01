@@ -13,7 +13,8 @@ jQuery(document).ready(function() {
       },
       600: {
         slidesPerView: 2,
-        slidesPerGroup: 2,
+        slidesPerGroup: 2
+
       }
     },
 
