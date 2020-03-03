@@ -52,7 +52,7 @@
 </div>
 
 <!-- footer -->
-<footer class="footer" lang="th">
+<footer class="footer u-margin-top-medium" lang="th">
   <div class="footer__box">
 	<div class="footer__logo">
 	  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noproblem_logo.svg" alt="" />
