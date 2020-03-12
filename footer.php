@@ -94,7 +94,7 @@
 			<label for="wechatqr2">ID</label>
 <input type="text" value="natika001" id="wechatqr2" readonly="">
 <i class="far fa-copy copyicon btn-shadow" onclick="copyqr2()">
-  <span class="popuptext2" id="myPopup2">Copied: natika001</span></i></div>
+  <span class="popuptext" id="myPopup2">Copied: natika001</span></i></div>
 	  </div>
 
 	  <div class="footer__social footer__social-3">
