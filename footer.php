@@ -52,7 +52,7 @@
 </div>
 
 <!-- footer -->
-<footer class="footer" lang="th">
+<footer class="footer u-margin-top-big" lang="th">
   <div class="footer__box">
 	<div class="footer__logo">
 	  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noproblem_logo.svg" alt="" />
@@ -87,21 +87,39 @@
 		</a>
 		<a href="http://line.me/ti/p/~nicknoproblem" target="_blank"><img class="btn-shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/line.svg" alt=""/></a>
 		<a href="https://m.me/Noproblemtshirt/" target="_blank"><img class="btn-shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/messenger.svg" alt=""/></a>
+		<a href="<?php echo $_SERVER['HTTP_HOST']; ?>/qr" target="_blank"><img id="wechat_bottom" class="btn-shadow wechat" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/wechat.svg" alt=""/></a>
 	  </div>
-	  <div class="footer__social footer__social-wechat">
-		<a href="<?php echo $_SERVER['HTTP_HOST']; ?>/qr" target="_blank">		<img id="wechat_bottom" class="btn-shadow wechat" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/wechat.svg" alt=""/></a>
+	  <!-- <div class="footer__social footer__social-wechat">
 		<div class="wechatbox">
-			<label for="wechatqr2">ID</label>
+			<label for="wechatqr2">WeChat ID</label>
 <input type="text" value="natika001" id="wechatqr2" readonly="">
 <i class="far fa-copy copyicon btn-shadow" onclick="copyqr2()">
-  <span class="popuptext2" id="myPopup2">Copied: natika001</span></i></div>
+  <span class="popuptext" id="myPopup2">Copied: natika001</span></i></div>
+	  </div> -->
+	  <!-- <div class="footer__social footer__social-3">
+		<p>Line ID</p>
+		<p>nicknoproblem</p>
 	  </div>
-
+	  <div class="footer__social footer__social-3">
+		<p>WeChat ID</p>
+		<p>natika001</p>
+	  </div>
 	  <div class="footer__social footer__social-3">
 		<p>CALL</p>
 		<p><a href="tel:0817741166">081-774-1166</a></p>
 	  </div>
 	  <div class="footer__social footer__social-4">
+		<p>EMAIL</p>
+		<p><a href="mailto:nicknoproblem@gmail.com">nicknoproblem@gmail.com</a></p>
+	  </div> -->
+
+	  <div class="footer__social footer__social-3">
+		<p>Line</p>
+		<p>nicknoproblem</p>
+		<p>WeChat</p>
+		<p>natika001</p>
+		<p>CALL</p>
+		<p><a href="tel:0817741166">081-774-1166</a></p>
 		<p>EMAIL</p>
 		<p><a href="mailto:nicknoproblem@gmail.com">nicknoproblem@gmail.com</a></p>
 	  </div>

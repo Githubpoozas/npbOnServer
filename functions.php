@@ -1131,7 +1131,7 @@ $fileName = $csvPath.$csvFile;
 if ( file_exists($fileName) && ($fp = fopen($fileName, "rb"))!==false  ) {
     $csv = fopen($fileName,'r');
 
-    echo '<section class="home__section-project u-margin-bottom-small u-margin-top-medium">
+    echo '<section class="home__section-project u-margin-bottom-small u-margin-top-big">
     <div class="container header">
     <div class="row">
       <div class="col-sm-12 col-md-12">
