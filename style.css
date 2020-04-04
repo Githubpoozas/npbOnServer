@@ -7236,6 +7236,8 @@ figure.wp-block-image {
 .item__color-picker:first-child {
   border: 1px solid black;
 } */
+
+
 .item__section-color {
   width: 80%;
   max-width: 1188px;
@@ -7295,7 +7297,7 @@ figure.wp-block-image {
   .item__pick-display-front {
     overflow: hidden;
     position: relative;
-    height: 105vw;
+    height: 115vw;
   }
 }
 
@@ -7303,7 +7305,7 @@ figure.wp-block-image {
   .item__pick-display-back {
     overflow: hidden;
     position: relative;
-    height: 100vw;
+    height: 115vw;
   }
 }
 

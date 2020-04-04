@@ -1,0 +1,63 @@
+{
+  "gallery": [
+    {
+      "colorName": "1white",
+      "img": [
+        "1white_1.jpg",
+        "1white_2.jpg",
+        "1white_3.jpg",
+        "1white_4.jpg",
+        "1white_5.jpg",
+        "1white_6.jpg"
+      ],
+      "colorPick":"1white_5.jpg"
+    },
+    {
+      "colorName": "2topdyed",
+      "img": [
+        "2topdyed_1.jpg",
+        "2topdyed_2.jpg",
+        "2topdyed_3.jpg",
+        "2topdyed_4.jpg",
+        "2topdyed_5.jpg",
+        "2topdyed_6.jpg"
+      ],
+      "colorPick":"2topdyed_5.jpg"
+    },
+    {
+      "colorName": "3black",
+      "img": [
+        "3black_1.jpg",
+        "3black_2.jpg",
+        "3black_3.jpg",
+        "3black_4.jpg",
+        "3black_5.jpg",
+        "3black_6.jpg"
+      ],
+      "colorPick":"3black_5.jpg"
+    }
+  ],
+  "detail": {
+    "sex": ["unisex"],
+    "productName": "T-SHIRT NO.0029",
+    "para1": ["ชนิดผ้า 20 เซมิ Jersey", "100% Cotton"],
+    "sizeCM": [
+      ["S", "91", "66", "199.-"],
+      ["M", "101", "71", "199.-"],
+      ["L", "111", "76", "199.-"],
+      ["XL", "122", "78", "259.-"],
+      ["2XL", "132", "81", "259.-"]
+    ],
+    "sizeINC": [
+      ["S", "36", "26", "199.-"],
+      ["M", "40", "28", "199.-"],
+      ["L", "44", "30", "199.-"],
+      ["XL", "48", "31", "259.-"],
+      ["2XL", "52", "32", "259.-"]
+    ],
+    "para2": [
+      "*ราคาดังกล่าว เป็นราคาปลีกต่อตัวเท่านั้น",
+      "หากลูกค้าต้องการราคาพิเศษ โปรดติดต่อเจ้าหน้าที่ได้โดยตรง"
+    ]
+  }
+}

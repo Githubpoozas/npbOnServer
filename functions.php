@@ -1170,3 +1170,171 @@ if ( file_exists($fileName) && ($fp = fopen($fileName, "rb"))!==false  ) {
 
 fclose($csv);
 }
+
+function itemPage($dir,$jsonFile){
+	$jsonPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
+$fileName = $jsonPath.$jsonFile;
+$data = file_get_contents($fileName);
+if($fileName && $data){
+	$dataDecode = json_decode($data,true);
+	echo '<section class="item__section-detail underNav">
+
+	<div class="swiper-container gallery-thumbs detail-thumb">
+	<div class="swiper-wrapper detail-thumb__wrapper">';
+
+	$gallery = $dataDecode["gallery"];
+	$defaultGallery = $gallery[0];
+	foreach($defaultGallery["img"] as $index=>$img){
+		echo '<div class="swiper-slide detail-thumb__slide" id="default-thumb-'.$index.'">';
+		getImg($dir,$img,"detail-thumb__img");
+		echo '</div>';
+	}
+	echo '</div>
+	</div>';
+
+	echo '<div class="swiper-container gallery-top detail-top">
+	<div class="swiper-wrapper detail-top__wrapper">';
+	foreach($defaultGallery["img"] as $index=>$img){
+		echo '<div class="swiper-slide detail-top__slide" id="default-top-'.$index.'">';
+			getImg($dir,$img,'detail-top__img');
+		echo '</div>';
+	}
+	echo '</div>
+	</div>
+
+	<div class="detail-description">
+	<div class="detail-description__gender u-margin-bottom-small">';
+
+	$detail = $dataDecode["detail"];
+	$gender = $detail["sex"];
+if($gender === "unisex"){
+	echo '<p class="unisex">UNISEX</p>';
+} else if($gender === "men"){
+	echo "<a class='gender-btn'><button class='btn--gray detail-description__gender-btn'>MEN</button></a>
+	<a class='gender-btn' href='".$gender["otherLink"]."'><button class='btn--gray btn--gray-light detail-description__gender-btn' style='box-shadow: 2px 1000px #C8C8C8 inset !important;'>WOMEN</button></a>
+	";
+} else if($gender === "women"){
+	echo "<a class='gender-btn' href='".$gender["otherLink"]."'><button class='btn--gray btn--gray-light  detail-description__gender-btn' style='box-shadow: 2px 1000px #C8C8C8 inset !important;'>MEN</button></a>
+	<a class='gender-btn'><button class='btn--gray detail-description__gender-btn'>WOMEN</button></a>";
+}
+echo '</div>
+<div class="detail-description__text">
+<h2 class="heading-primary">'.$detail["productName"].'</h2>
+';
+foreach($detail['para1'] as $para){
+	echo '<p>'.$para.'</p>';
+}
+echo '</div>
+<div class="detail-description__size-table u-margin-bottom-small">
+    <div class="detail-description__size-table__measure">
+      <button class="btn--gray detail-description__size-table__measure__cm">CM</button>
+      <button class="btn--gray btn--gray-light detail-description__size-table__measure__inc">INC</button>
+    </div>
+    <table class="detail-description__size-table__cm">
+      <tr>
+        <th>ไซส์<br />Size</th>
+        <th>รอบอก<br />Chest</th>
+        <th>ความยาว<br />Length</th>
+        <th>ราคา<br />Price</th>
+      </tr>
+	 <tr>';
+	 foreach($detail["sizeCM"] as $cmRow){
+		 foreach($cmRow as $cmColumn){
+			 echo '<th>'.$cmColumn.'</th>';
+		 }
+		 echo '</tr>';
+	 }
+echo '</table>
+<table class="detail-description__size-table__inc">
+  <tr>
+	<th>ไซส์<br />Size</th>
+	<th>รอบอก<br />Chest</th>
+	<th>ความยาว<br />Length</th>
+	<th>ราคา<br />Price</th>
+  </tr>
+  <tr>';
+  foreach($detail["sizeINC"] as $incRow){
+	foreach($incRow as $incColumn){
+		echo '<th>'.$incColumn.'</th>';
+	}
+	echo '</tr>';
+  }
+  echo '</table>
+  </div>
+ <div class="detail-description__text">';
+ foreach($detail["para2"] as $para){
+	 echo '<p>'.$para.'</p>';
+ }
+ echo '</div>';
+
+echo '<section class="item__section-color">
+<div class="item__color">';
+
+foreach($gallery as $color){
+	echo '<div class="item__color-picker '.$color["colorName"].'">';
+		getImg($dir,$color["colorPick"],'item__color-picker__img');
+
+	echo '</div>';
+}
+echo '
+</div>
+</section>
+
+<div class="item__preload">';
+foreach($gallery as $color){
+	echo '<div class="item__preload-container '.$color['colorName'].'">';
+	foreach($color['img'] as $img){
+		getImg($dir,$img,'item__preload__img');
+	}
+	echo '</div>';
+}
+echo '</div>';
+
+} else{
+	echo "error from itemPage function<br> cannot read file: ".$fileName." or file does not exsit";
+}
+}
+function clothSlide($dir,$jsonFile){
+	$jsonPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
+	$fileName = $jsonPath.$jsonFile;
+	$data = file_get_contents($fileName);
+	if($fileName && $data){
+		$dataDecode = json_decode($data,true);
+
+		echo '<section class="section-product u-margin-top-medium u-margin-bottom-medium">
+		<div class="container header section-product__header">
+		<div class="row">
+		<div class="col-sm-12 col-md-12">';
+		
+		$slide = $dataDecode["slide"];
+		echo '<h2 class="heading-primary ">'.$slide["productName"].'</h2>
+		<h3 class="heading-secondary">'.$slide["secondName"].'</h3>
+		</div>
+		</div>
+		</div>
+		<div class="swiper-container siwper-container__slide3">
+		<div class="swiper-wrapper swiper-wrapper__slide3">';
+
+		foreach($slide["items"] as $item){
+
+			echo '<div class="swiper-slide swiper-slide__slide3">
+			<a href="'.$item["link"].'?color='.$item["colorName"].'>
+			<div class="cloth">';
+			getImg($dir,$item["front"],'cloth__img');
+			getImg($dir,$item["back"],'cloth__img');
+
+			echo '<div class="cloth__price">
+			<h2 class="cloth__price-header">'.$item["firstDes"].'</h2>
+			<p class="cloth__price-description">'.$item["secondDes"].'</p>
+			<p class="cloth__price-tag">'.$item["price"].'</p>
+			</div>
+			</div>
+			</a>
+			</div>';
+		}
+
+
+	} else {
+		echo "error from clothSlide function<br> cannot read file: ".$fileName." or file does not exsit";
+	}
+}
