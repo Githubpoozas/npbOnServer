@@ -145,6 +145,13 @@ function twentytwenty_theme_support() {
 
 add_action( 'after_setup_theme', 'twentytwenty_theme_support' );
 
+/* Load default fonts*/
+function myprefix_enqueue_google_fonts() { 
+	wp_enqueue_style( 'lato', 'https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap' ); 
+	wp_enqueue_style( 'kanit', 'https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap' ); 
+}
+add_action( 'wp_enqueue_scripts', 'myprefix_enqueue_google_fonts' ); 
+
 /**
  * REQUIRED FILES
  * Include required files.
@@ -213,8 +220,7 @@ function twentytwenty_register_scripts() {
 	
 
 	// noproblem css
-	wp_enqueue_style( 'noproblem-lato', '//fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900&display=swap', false, null, 'all' );
-	wp_enqueue_style( 'noproblem-kanit', '//fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900&display=swap', false, null, 'all' );
+
 	wp_enqueue_style( 'swiper-css',  get_template_directory_uri() . '/assets/css/swiper.min.css', false,'5.2.1', 'all' );
 	wp_enqueue_style( 'bootstrap',  get_template_directory_uri() . '/assets/css/bootstrap.min.css', false,'4.3.1', 'all' );
 
@@ -1200,6 +1206,7 @@ if($fileName && $data){
 		echo '</div>';
 	}
 	echo '</div>
+	<div class="swiper-pagination"></div>
 	</div>
 
 	<div class="detail-description">
@@ -1208,13 +1215,13 @@ if($fileName && $data){
 	$detail = $dataDecode["detail"];
 	$gender = $detail["sex"];
 if($gender === "unisex"){
-	echo '<p class="unisex">UNISEX</p>';
+	echo '<p class="gender-unisex">UNISEX</p>';
 } else if($gender === "men"){
 	echo "<a class='gender-btn'><button class='btn--gray detail-description__gender-btn'>MEN</button></a>
-	<a class='gender-btn' href='".$gender["otherLink"]."'><button class='btn--gray btn--gray-light detail-description__gender-btn' style='box-shadow: 2px 1000px #C8C8C8 inset !important;'>WOMEN</button></a>
+	<a class='gender-btn' href='".$detail["otherLink"]."'><button class='btn--gray btn--gray-light detail-description__gender-btn' style='box-shadow: 2px 1000px #C8C8C8 inset !important;'>WOMEN</button></a>
 	";
 } else if($gender === "women"){
-	echo "<a class='gender-btn' href='".$gender["otherLink"]."'><button class='btn--gray btn--gray-light  detail-description__gender-btn' style='box-shadow: 2px 1000px #C8C8C8 inset !important;'>MEN</button></a>
+	echo "<a class='gender-btn' href='".$detail["otherLink"]."'><button class='btn--gray btn--gray-light  detail-description__gender-btn' style='box-shadow: 2px 1000px #C8C8C8 inset !important;'>MEN</button></a>
 	<a class='gender-btn'><button class='btn--gray detail-description__gender-btn'>WOMEN</button></a>";
 }
 echo '</div>
@@ -1226,7 +1233,8 @@ foreach($detail['para1'] as $para){
 }
 echo '</div>
 <div class="detail-description__size-table u-margin-bottom-small">
-    <div class="detail-description__size-table__measure">
+	<div class="detail-description__size-table__measure">
+	<p id="colorName1">'.$defaultGallery["colorName"].'</p>
       <button class="btn--gray detail-description__size-table__measure__cm">CM</button>
       <button class="btn--gray btn--gray-light detail-description__size-table__measure__inc">INC</button>
     </div>
@@ -1240,7 +1248,7 @@ echo '</div>
 	 <tr>';
 	 foreach($detail["sizeCM"] as $cmRow){
 		 foreach($cmRow as $cmColumn){
-			 echo '<th>'.$cmColumn.'</th>';
+			 echo '<td>'.$cmColumn.'</td>';
 		 }
 		 echo '</tr>';
 	 }
@@ -1254,9 +1262,15 @@ echo '</table>
   </tr>
   <tr>';
   foreach($detail["sizeINC"] as $incRow){
-	foreach($incRow as $incColumn){
-		echo '<th>'.$incColumn.'</th>';
+	foreach($incRow as $index=>$incColumn){
+		
+if($index == 1 || $index == 2){
+	echo '<td>'.$incColumn.'"</td>';
+} else{
+	echo '<td>'.$incColumn.'</td>';
+}
 	}
+
 	echo '</tr>';
   }
   echo '</table>
@@ -1265,36 +1279,72 @@ echo '</table>
  foreach($detail["para2"] as $para){
 	 echo '<p>'.$para.'</p>';
  }
- echo '</div>';
+ echo '</div>
+<div class="detail-socialmedia u-margin-bottom-medium">
+<a href="https://wa.me/66817741166" target="_blank">
+ <div class="detail-socialmedia-button btn-shadow btn-whatsapp">
+ <i class="fab fa-whatsapp"></i><label>WhatsApp</label>
+ </div>
+</a>
+<a href="https://www.facebook.com/130047820416542/" target="_blank">
+ <div class="detail-socialmedia-button btn-shadow btn-facebook">
+ <i class="fab fa-facebook-f"></i><label>Facebook</label>
+ </div>
+</a>
 
-echo '<section class="item__section-color">
+<a href="https://line.me/ti/p/~nicknoproblem" target="_blank">
+ <div class="detail-socialmedia-button btn-shadow btn-line">
+ <i class="fab fa-line"></i><label>Line</label>
+ </div>
+</a>
+
+<a href="https://m.me/Noproblemtshirt/" target="_blank">
+ <div class="detail-socialmedia-button btn-shadow btn-messenger">
+ <i class="fab fa-facebook-messenger"></i><label>Messenger</label>
+ </div>
+</a>
+
+<a href="'.$_SERVER['HTTP_HOST'].'/qr" target="_blank">
+ <div class="detail-socialmedia-button btn-shadow btn-wechat">
+ <i class="fab fa-weixin"></i><label>WeChat</label>
+ </div>
+</a>
+
+</div>';
+
+
+echo '<div class="item__section-color">
+<p id="colorName2">'.$defaultGallery["colorName"].'</p>
 <div class="item__color">';
 
 foreach($gallery as $color){
-	echo '<div class="item__color-picker '.$color["colorName"].'">';
+	echo '<div class="item__color-picker '.$color["colorClass"].'">';
 		getImg($dir,$color["colorPick"],'item__color-picker__img');
 
 	echo '</div>';
 }
 echo '
 </div>
-</section>
+</div>
+</section>';
 
-<div class="item__preload">';
+echo '<section class="item__preload">';
 foreach($gallery as $color){
-	echo '<div class="item__preload-container '.$color['colorName'].'">';
+	echo '<div class="item__preload-container '.$color['colorClass'].'">
+	<p class="item__preload-colorName">'.$color['colorName'].'</p>
+	';
 	foreach($color['img'] as $img){
 		getImg($dir,$img,'item__preload__img');
 	}
 	echo '</div>';
 }
-echo '</div>';
+echo '</section>';
 
 } else{
 	echo "error from itemPage function<br> cannot read file: ".$fileName." or file does not exsit";
 }
 }
-function clothSlide($dir,$jsonFile){
+function clothSlide($dir,$jsonFile,$seemore){
 	$jsonPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
 	$fileName = $jsonPath.$jsonFile;
 	$data = file_get_contents($fileName);
@@ -1312,27 +1362,47 @@ function clothSlide($dir,$jsonFile){
 		</div>
 		</div>
 		</div>
-		<div class="swiper-container siwper-container__slide3">
+		<div class="swiper-container swiper-container__slide3">
 		<div class="swiper-wrapper swiper-wrapper__slide3">';
 
 		foreach($slide["items"] as $item){
 
 			echo '<div class="swiper-slide swiper-slide__slide3">
-			<a href="'.$item["link"].'?color='.$item["colorName"].'>
+			<a href="'.$item["link"].'?color='.$item["colorClass"].'">
 			<div class="cloth">';
 			getImg($dir,$item["front"],'cloth__img');
 			getImg($dir,$item["back"],'cloth__img');
 
-			echo '<div class="cloth__price">
+			echo '
+			</div>
+			<div class="cloth__price">
 			<h2 class="cloth__price-header">'.$item["firstDes"].'</h2>
 			<p class="cloth__price-description">'.$item["secondDes"].'</p>
 			<p class="cloth__price-tag">'.$item["price"].'</p>
 			</div>
-			</div>
 			</a>
 			</div>';
 		}
+		echo '</div>
+		<div class="swiper-button-next swiper-slide__slide3__button-right"></div>
+		<div class="swiper-button-prev swiper-slide__slide3__button-left"></div>';
 
+		$seemore = strtolower($seemore);
+		if($seemore == 'seemore'){
+		  echo '<div class="seemore">
+		  <div class="seemore__more">
+			<p class="seemore__text-more">สินค้าทั้งหมด</p>
+			<i class="seemore__icon-more fas fa-chevron-down"></i>
+		  </div>
+		  <div class="seemore__less">
+			<p class="seemore__text-more">แสดงน้อยลง</p>
+			<i class="seemore__icon-more fas fa-chevron-up"></i>
+		  </div>
+		</div>';
+		}
+		echo "
+		</div>
+		</section>";
 
 	} else {
 		echo "error from clothSlide function<br> cannot read file: ".$fileName." or file does not exsit";

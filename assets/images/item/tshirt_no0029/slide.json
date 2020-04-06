@@ -5,7 +5,7 @@
     "items": [
       {
         "link":"http://noproblem.nupni.ml/t-shirt-no-0029/",
-        "colorName":"3black",
+        "colorClass":"3black",
         "front":"3black_3.jpg",
         "back":"3black_2.jpg",
         "firstDes":"T-SHIRT NO.0029 BLACK",
@@ -14,7 +14,7 @@
       },
       {
         "link":"http://noproblem.nupni.ml/t-shirt-no-0029/",
-        "colorName":"1white",
+        "colorClass":"1white",
         "front":"1white_1.jpg",
         "back":"1white_4.jpg",
         "firstDes":"T-SHIRT NO.0029 WHITE",
@@ -23,7 +23,7 @@
       },
       {
         "link":"http://noproblem.nupni.ml/t-shirt-no-0029/",
-        "colorName":"2topdyed",
+        "colorClass":"2topdyed",
         "front":"2topdyed_2.jpg",
         "back":"2topdyed_4.jpg",
         "firstDes":"T-SHIRT NO.0029 GREY MELANGE",

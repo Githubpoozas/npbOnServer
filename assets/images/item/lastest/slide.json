@@ -1,0 +1,116 @@
+{
+  "slide": {
+    "productName": "LASTEST PRODUCT",
+    "secondName": "สินค้าล่าสุด",
+    "items": [
+      {
+        "link":"http://noproblem.nupni.ml/ns5000/",
+        "colorClass":"2yellow_topaz",
+        "front":"2yellow_topaz_3.jpg",
+        "back":"2yellow_topaz_2.jpg",
+        "firstDes":"POLO NS.5000 YELLOW TOPAZ",
+        "secondDes":"เสื้อโปโลชาย รหัส NO.5000 สีเหลืองบุษราคัม",
+        "price":"380 ฿"
+      },
+      {
+        "link":"http://noproblem.nupni.ml/ns5000/",
+        "colorClass":"6amethyst",
+        "front":"6amethyst_3.jpg",
+        "back":"6amethyst_2.jpg",
+        "firstDes":"POLO NS.5000 AMETHYST",
+        "secondDes":"เสื้อโปโลชาย รหัส NO.5000 สีม่วงอาเมทิส",
+        "price":"380 ฿"
+      },
+      {
+        "link":"http://noproblem.nupni.ml/no5000/",
+        "colorClass":"5red_garnet",
+        "front":"5red_garnet_3.jpg",
+        "back":"5red_garnet_2.jpg",
+        "firstDes":"POLO NS.5000 RED GARNET",
+        "secondDes":"เสื้อโปโลชาย รหัส NO.5000 สีแดงโกเมน",
+        "price":"380 ฿"
+      },
+      {
+        "link":"http://noproblem.nupni.ml/no5000/",
+        "colorClass":"3orange_songea",
+        "front":"3orange_songea_3.jpg",
+        "back":"3orange_songea_2.jpg",
+        "firstDes":"POLO NS.5000 ORANGE SONGEA",
+        "secondDes":"เสื้อโปโลชาย รหัส NO.5000 สีส้มซองเจีย",
+        "price":"380 ฿"
+      },
+      {
+        "link":"http://noproblem.nupni.ml/t-shirt-no-0020/",
+        "colorClass":"6red",
+        "front":"6red_2.jpg",
+        "back":"6red_4.jpg",
+        "firstDes":"T-SHIRT NO.0020 RED",
+        "secondDes":"เสื้อยืดแฟชั่นคอกลม รหัส NO 0020 สีแดง",
+        "price":"199 ฿"
+      },
+      {
+        "link":"http://noproblem.nupni.ml/t-shirt-no-0020/",
+        "colorClass":"22dark_navy_blue",
+        "front":"22dark_navy_blue_2.jpg",
+        "back":"22dark_navy_blue_4.jpg",
+        "firstDes":"T-SHIRT NO.0020 LIGHT NAVY",
+        "secondDes":"เสื้อยืดแฟชั่นคอกลม รหัส NO 0020 สีกรมอ่อน",
+        "price":"199 ฿"
+      },
+      {
+        "link":"http://noproblem.nupni.ml/t-shirt-no-0029/",
+        "colorClass":"1white",
+        "front":"1white_1.jpg",
+        "back":"1white_4.jpg",
+        "firstDes":"T-SHIRT NO.0029 WHITE",
+        "secondDes":"เสื้อยืดแฟชั่นคอกลม รหัส NO 0029 สีขาว",
+        "price":"199 ฿"
+      },
+      {
+        "link":"http://noproblem.nupni.ml/t-shirt-no-0029/",
+        "colorClass":"2topdyed",
+        "front":"2topdyed_2.jpg",
+        "back":"2topdyed_4.jpg",
+        "firstDes":"T-SHIRT NO.0029 GREY MELANGE",
+        "secondDes":"เสื้อยืดแฟชั่นคอกลม รหัส NO 0029 สีท็อปดราย",
+        "price":"199 ฿"
+      },
+      {
+        "link":"http://noproblem.nupni.ml/tshirt_ov101/",
+        "colorClass":"13black",
+        "front":"13black_1.jpg",
+        "back":"13black_4.jpg",
+        "firstDes":"t-shirt ov.101 black",
+        "secondDes":"เสื้อยืดแฟชั่นคอกลม รหัส OV.101 สีดำ",
+        "price":"199 ฿"
+      },
+      {
+        "link":"http://noproblem.nupni.ml/tshirt_ov101/",
+        "colorClass":"5pink",
+        "front":"5pink_1.jpg",
+        "back":"5pink_4.jpg",
+        "firstDes":"t-shirt ov.101 magenta",
+        "secondDes":"เสื้อยืดแฟชั่นคอกลม รหัส OV.101 สีบานเย็น",
+        "price":"199 ฿"
+      },
+      {
+        "link":"http://noproblem.nupni.ml/t-shirt-ov-102/",
+        "colorClass":"4red",
+        "front":"4red_3.jpg",
+        "back":"4red_2.jpg",
+        "firstDes":"t-shirt ov.102 red",
+        "secondDes":"เสื้อยืดแฟชั่นคอวี รหัส OV.102 สีแดง",
+        "price":"199 ฿"
+      },
+      {
+        "link":"http://noproblem.nupni.ml/t-shirt-ov-102/",
+        "colorClass":"5pink",
+        "front":"5pink_3.jpg",
+        "back":"5pink_2.jpg",
+        "firstDes":"t-shirt ov.102 pink",
+        "secondDes":"เสื้อยืดแฟชั่นคอวี รหัส OV.102 สีชมพู",
+        "price":"199 ฿"
+      }
+    ]
+  }
+}

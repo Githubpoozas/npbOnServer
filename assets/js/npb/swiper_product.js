@@ -6,16 +6,17 @@ jQuery(document).ready(function() {
     slidesPerGroup: 1,
 
     breakpoints: {
-      900: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 50
-      },
       600: {
         slidesPerView: 2,
         slidesPerGroup: 2
-
+      },
+      900: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 50,
+        simulateTouch: false
       }
+
     },
 
     navigation: {

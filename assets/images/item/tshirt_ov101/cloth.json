@@ -1,0 +1,197 @@
+{
+  "gallery": [
+    {
+      "colorClass": "1white",
+      "colorName": "WHITE",
+      "img": [
+        "1white_1.jpg",
+        "1white_2.jpg",
+        "1white_3.jpg",
+        "1white_4.jpg",
+        "1white_5.jpg",
+        "1white_6.jpg"
+      ],
+      "colorPick":"1white_5.jpg"
+    },
+    {
+      "colorClass": "2yellow",
+      "colorName": "YELLOW",
+      "img": [
+        "2yellow_1.jpg",
+        "2yellow_2.jpg",
+        "2yellow_3.jpg",
+        "2yellow_4.jpg",
+        "2yellow_5.jpg",
+        "2yellow_6.jpg"
+      ],
+      "colorPick":"2yellow_5.jpg"
+    },
+    {
+      "colorClass": "3caramel",
+      "colorName": "CARAMEL",
+      "img": [
+        "3caramel_1.jpg",
+        "3caramel_2.jpg",
+        "3caramel_3.jpg",
+        "3caramel_4.jpg",
+        "3caramel_5.jpg",
+        "3caramel_6.jpg"
+      ],
+      "colorPick":"3caramel_5.jpg"
+    },
+    {
+      "colorClass": "4orange",
+      "colorName": "ORANGE",
+      "img": [
+        "4orange_1.jpg",
+        "4orange_2.jpg",
+        "4orange_3.jpg",
+        "4orange_4.jpg",
+        "4orange_5.jpg",
+        "4orange_6.jpg"
+      ],
+      "colorPick":"4orange_5.jpg"
+    },
+    {
+      "colorClass": "5pink",
+      "colorName": "PINK",
+      "img": [
+        "5pink_1.jpg",
+        "5pink_2.jpg",
+        "5pink_3.jpg",
+        "5pink_4.jpg",
+        "5pink_5.jpg",
+        "5pink_6.jpg"
+      ],
+      "colorPick":"5pink_5.jpg"
+    },
+    {
+      "colorClass": "6red",
+      "colorName": "RED",
+      "img": [
+        "6red_1.jpg",
+        "6red_2.jpg",
+        "6red_3.jpg",
+        "6red_4.jpg",
+        "6red_5.jpg",
+        "6red_6.jpg"
+      ],
+      "colorPick":"6red_5.jpg"
+    },
+    {
+      "colorClass": "7maroon",
+      "colorName": "MAROON",
+      "img": [
+        "7maroon_1.jpg",
+        "7maroon_2.jpg",
+        "7maroon_3.jpg",
+        "7maroon_4.jpg",
+        "7maroon_5.jpg",
+        "7maroon_6.jpg"
+      ],
+      "colorPick":"7maroon_5.jpg"
+    },
+    {
+      "colorClass": "8deep_blue",
+      "colorName": "DEEP BLUE",
+      "img": [
+        "8deep_blue_1.jpg",
+        "8deep_blue_2.jpg",
+        "8deep_blue_3.jpg",
+        "8deep_blue_4.jpg",
+        "8deep_blue_5.jpg",
+        "8deep_blue_6.jpg"
+      ],
+      "colorPick":"8deep_blue_5.jpg"
+    },
+    {
+      "colorClass": "9mint",
+      "colorName": "MINT",
+      "img": [
+        "9mint_1.jpg",
+        "9mint_2.jpg",
+        "9mint_3.jpg",
+        "9mint_4.jpg",
+        "9mint_5.jpg",
+        "9mint_6.jpg"
+      ],
+      "colorPick":"9mint_5.jpg"
+    },
+    {
+      "colorClass": "10blue",
+      "colorName": "BLUE",
+      "img": [
+        "10blue_1.jpg",
+        "10blue_2.jpg",
+        "10blue_3.jpg",
+        "10blue_4.jpg",
+        "10blue_5.jpg",
+        "10blue_6.jpg"
+      ],
+      "colorPick":"10blue_5.jpg"
+    },
+    {
+      "colorClass": "11gray",
+      "colorName": "GRAY",
+      "img": [
+        "11gray_1.jpg",
+        "11gray_2.jpg",
+        "11gray_3.jpg",
+        "11gray_4.jpg",
+        "11gray_5.jpg",
+        "11gray_6.jpg"
+      ],
+      "colorPick":"11gray_5.jpg"
+    },
+    {
+      "colorClass": "12topdyed",
+      "colorName": "GRAY MELANGE",
+      "img": [
+        "12topdyed_1.jpg",
+        "12topdyed_2.jpg",
+        "12topdyed_3.jpg",
+        "12topdyed_4.jpg",
+        "12topdyed_5.jpg",
+        "12topdyed_6.jpg"
+      ],
+      "colorPick":"12topdyed_5.jpg"
+    },
+    {
+      "colorClass": "13black",
+      "colorName": "BLACK",
+      "img": [
+        "13black_1.jpg",
+        "13black_2.jpg",
+        "13black_3.jpg",
+        "13black_4.jpg",
+        "13black_5.jpg",
+        "13black_6.jpg"
+      ],
+      "colorPick":"13black_5.jpg"
+    }
+  ],
+  "detail": {
+    "sex": "unisex",
+    "otherLink": "",
+    "productName": "T-SHIRT OV.102",
+    "para1": ["ชนิดผ้า 32 เซมิ Jersey", "100% Cotton"],
+    "sizeCM": [
+      ["S", "81", "66", "199.-"],
+      ["M", "91", "68.5", "199.-"],
+      ["L", "101", "71", "199.-"],
+      ["XL", "111", "73.5", "199.-"],
+      ["2XL", "121", "76", "199.-"]
+    ],
+    "sizeINC": [
+      ["S", "32", "26", "199.-"],
+      ["M", "36", "27", "199.-"],
+      ["L", "40", "28", "199.-"],
+      ["XL", "44", "29", "199.-"],
+      ["2XL", "48", "30", "199.-"]
+    ],
+    "para2": [
+      "*เสื้อขนาด 3XL และ 4XL ผลิตเฉพาะเสื้อสีขาว,สีดำและสีท็อปดราย เท่านั้น",
+      "*ราคาดังกล่าว เป็นราคาปลีกต่อตัวเท่านั้น หากลูกค้าต้องการราคาพิเศษ โปรดติดต่อเจ้าหน้าที่ได้โดยตรง"
+    ]
+  }
+}

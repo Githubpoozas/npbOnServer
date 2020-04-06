@@ -86,7 +86,7 @@ if ( ! class_exists( 'TwentyTwenty_Non_Latin_Languages' ) ) {
 					'ko-KR' => array( '\'Apple SD Gothic Neo\'', '\'Malgun Gothic\'', '\'Nanum Gothic\'', 'Dotum', 'sans-serif' ),
 
 					// Thai.
-					'th'    => array( '\'Sukhumvit Set\'', '\'Helvetica Neue\'', 'Helvetica', 'Arial', 'sans-serif' ),
+					'th'    => array( 'Kanit', 'Lato', 'Arial', 'sans-serif' ),
 
 					// Vietnamese.
 					'vi'    => array( '\'Libre Franklin\'', 'sans-serif' ),

@@ -7,10 +7,13 @@ var galleryThumbs = new Swiper(".gallery-thumbs", {
   allowTouchMove: false
 });
 var galleryTop = new Swiper(".gallery-top", {
-  slidesPerView: "auto",
-  spaceBetween: 3,
+  slidesPerView: 1,
+  // spaceBetween: 3,
   thumbs: {
     swiper: galleryThumbs
+  },
+  pagination: {
+    el: '.swiper-pagination',
   },
   grabCursor: true
 });

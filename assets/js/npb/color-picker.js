@@ -10,18 +10,33 @@
 // });
 
 jQuery(document).ready(function () {
-  jQuery(".item__color-picker").on("click", function () {
-    let colorName = jQuery(this).attr("class").split(" ")[1];
 
+  function changeColor(colorName){
     let preloadContainer = jQuery(".item__preload-container." + colorName);
+    let displayName = preloadContainer.find(".item__preload-colorName").text();
+    jQuery("#colorName1").text(displayName);
+    jQuery("#colorName2").text(displayName);
 
-    jQuery(preloadContainer).children().each(function (index) {
+    jQuery(preloadContainer).find(".item__preload__img").each(function (index) {
       let srcImg = jQuery(this).attr("src");
-      console.log()
       jQuery("#default-thumb-"+index+" .detail-thumb__img").attr("src",srcImg);
       jQuery("#default-top-"+index+" .detail-top__img").attr("src",srcImg);
-
-
       })
+  }
+
+  let url = jQuery(location).attr("href");
+  let urlArr = url.split("?");
+  if(urlArr[1]){
+    let color = urlArr[1].split("=");
+    let colorName = color[1];
+    changeColor(colorName);
+
+  }
+
+
+  jQuery(".item__color-picker").on("click", function () {
+    let colorName = jQuery(this).attr("class").split(" ")[1];
+    changeColor(colorName);
+
   });
 });

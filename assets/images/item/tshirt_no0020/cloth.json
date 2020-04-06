@@ -1,0 +1,370 @@
+{
+  "gallery": [
+    {
+      "colorClass": "1white",
+      "colorName": "WHITE",
+      "img": [
+        "1white_1.jpg",
+        "1white_2.jpg",
+        "1white_3.jpg",
+        "1white_4.jpg",
+        "1white_5.jpg",
+        "1white_6.jpg"
+      ],
+      "colorPick":"1white_5.jpg"
+    },
+    {
+      "colorClass": "2cream",
+      "colorName": "CREAM",
+      "img": [
+        "2cream_1.jpg",
+        "2cream_2.jpg",
+        "2cream_3.jpg",
+        "2cream_4.jpg",
+        "2cream_5.jpg",
+        "2cream_6.jpg"
+      ],
+      "colorPick":"2cream_5.jpg"
+    },
+    {
+      "colorClass": "3butter_yellow",
+      "colorName": "BUTTER YELLOW",
+      "img": [
+        "3butter_yellow_1.jpg",
+        "3butter_yellow_2.jpg",
+        "3butter_yellow_3.jpg",
+        "3butter_yellow_4.jpg",
+        "3butter_yellow_5.jpg",
+        "3butter_yellow_6.jpg"
+      ],
+      "colorPick":"3butter_yellow_5.jpg"
+    },
+    {
+      "colorClass": "4deep_yellow",
+      "colorName": "DEEP YELLOW",
+      "img": [
+        "4deep_yellow_1.jpg",
+        "4deep_yellow_2.jpg",
+        "4deep_yellow_3.jpg",
+        "4deep_yellow_4.jpg",
+        "4deep_yellow_5.jpg",
+        "4deep_yellow_6.jpg"
+      ],
+      "colorPick":"4deep_yellow_5.jpg"
+    },
+    {
+      "colorClass": "5orange",
+      "colorName": "ORANGE",
+      "img": [
+        "5orange_1.jpg",
+        "5orange_2.jpg",
+        "5orange_3.jpg",
+        "5orange_4.jpg",
+        "5orange_5.jpg",
+        "5orange_6.jpg"
+      ],
+      "colorPick":"5orange_5.jpg"
+    },
+    {
+      "colorClass": "6red",
+      "colorName": "RED",
+      "img": [
+        "6red_1.jpg",
+        "6red_2.jpg",
+        "6red_3.jpg",
+        "6red_4.jpg",
+        "6red_5.jpg",
+        "6red_6.jpg"
+      ],
+      "colorPick":"6red_5.jpg"
+    },
+    {
+      "colorClass": "7maroon",
+      "colorName": "MAROON",
+      "img": [
+        "7maroon_1.jpg",
+        "7maroon_2.jpg",
+        "7maroon_3.jpg",
+        "7maroon_4.jpg",
+        "7maroon_5.jpg",
+        "7maroon_6.jpg"
+      ],
+      "colorPick":"7maroon_5.jpg"
+    },
+    {
+      "colorClass": "8brick",
+      "colorName": "BRICK",
+      "img": [
+        "8brick_1.jpg",
+        "8brick_2.jpg",
+        "8brick_3.jpg",
+        "8brick_4.jpg",
+        "8brick_5.jpg",
+        "8brick_6.jpg"
+      ],
+      "colorPick":"8brick_5.jpg"
+    },
+    {
+      "colorClass": "9caramel",
+      "colorName": "CARAMEL",
+      "img": [
+        "9caramel_1.jpg",
+        "9caramel_2.jpg",
+        "9caramel_3.jpg",
+        "9caramel_4.jpg",
+        "9caramel_5.jpg",
+        "9caramel_6.jpg"
+      ],
+      "colorPick":"9caramel_5.jpg"
+    },
+    {
+      "colorClass": "10goldie_brown",
+      "colorName": "GOLDIE BROWN",
+      "img": [
+        "10goldie_brown_1.jpg",
+        "10goldie_brown_2.jpg",
+        "10goldie_brown_3.jpg",
+        "10goldie_brown_4.jpg",
+        "10goldie_brown_5.jpg",
+        "10goldie_brown_6.jpg"
+      ],
+      "colorPick":"10goldie_brown_5.jpg"
+    },
+    {
+      "colorClass": "11pink",
+      "colorName": "PINK",
+      "img": [
+        "11pink_1.jpg",
+        "11pink_2.jpg",
+        "11pink_3.jpg",
+        "11pink_4.jpg",
+        "11pink_5.jpg",
+        "11pink_6.jpg"
+      ],
+      "colorPick":"11pink_5.jpg"
+    },
+    {
+      "colorClass": "12violet",
+      "colorName": "VIOLET 2018",
+      "img": [
+        "12violet_1.jpg",
+        "12violet_2.jpg",
+        "12violet_3.jpg",
+        "12violet_4.jpg",
+        "12violet_5.jpg",
+        "12violet_6.jpg"
+      ],
+      "colorPick":"12violet_5.jpg"
+    },
+    {
+      "colorClass": "13blue2018",
+      "colorName": "BLUE 2018",
+      "img": [
+        "13blue2018_1.jpg",
+        "13blue2018_2.jpg",
+        "13blue2018_3.jpg",
+        "13blue2018_4.jpg",
+        "13blue2018_5.jpg",
+        "13blue2018_6.jpg"
+      ],
+      "colorPick":"13blue2018_5.jpg"
+    },
+    {
+      "colorClass": "14dark_sky_blue",
+      "colorName": "DARK SKY BLUE",
+      "img": [
+        "14dark_sky_blue_1.jpg",
+        "14dark_sky_blue_2.jpg",
+        "14dark_sky_blue_3.jpg",
+        "14dark_sky_blue_4.jpg",
+        "14dark_sky_blue_5.jpg",
+        "14dark_sky_blue_6.jpg"
+      ],
+      "colorPick":"14dark_sky_blue_5.jpg"
+    },
+    {
+      "colorClass": "15deep_sky_blue",
+      "colorName": "DEEP SKY BLUE",
+      "img": [
+        "15deep_sky_blue_1.jpg",
+        "15deep_sky_blue_2.jpg",
+        "15deep_sky_blue_3.jpg",
+        "15deep_sky_blue_4.jpg",
+        "15deep_sky_blue_5.jpg",
+        "15deep_sky_blue_6.jpg"
+      ],
+      "colorPick":"15deep_sky_blue_5.jpg"
+    },
+    {
+      "colorClass": "16crystal_blue",
+      "colorName": "CRYSTAL BLUE",
+      "img": [
+        "16crystal_blue_1.jpg",
+        "16crystal_blue_2.jpg",
+        "16crystal_blue_3.jpg",
+        "16crystal_blue_4.jpg",
+        "16crystal_blue_5.jpg",
+        "16crystal_blue_6.jpg"
+      ],
+      "colorPick":"16crystal_blue_5.jpg"
+    },
+    {
+      "colorClass": "17green_leaf",
+      "colorName": "GREEN LEAF",
+      "img": [
+        "17green_leaf_1.jpg",
+        "17green_leaf_2.jpg",
+        "17green_leaf_3.jpg",
+        "17green_leaf_4.jpg",
+        "17green_leaf_5.jpg",
+        "17green_leaf_6.jpg"
+      ],
+      "colorPick":"17green_leaf_5.jpg"
+    },
+    {
+      "colorClass": "18mint",
+      "colorName": "MINT",
+      "img": [
+        "18mint_1.jpg",
+        "18mint_2.jpg",
+        "18mint_3.jpg",
+        "18mint_4.jpg",
+        "18mint_5.jpg",
+        "18mint_6.jpg"
+      ],
+      "colorPick":"18mint_5.jpg"
+    },
+    {
+      "colorClass": "19teal",
+      "colorName": "TEAL",
+      "img": [
+        "19teal_1.jpg",
+        "19teal_2.jpg",
+        "19teal_3.jpg",
+        "19teal_4.jpg",
+        "19teal_5.jpg",
+        "19teal_6.jpg"
+      ],
+      "colorPick":"19teal_5.jpg"
+    },
+    {
+      "colorClass": "20avocado",
+      "colorName": "AVOCADO",
+      "img": [
+        "20avocado_1.jpg",
+        "20avocado_2.jpg",
+        "20avocado_3.jpg",
+        "20avocado_4.jpg",
+        "20avocado_5.jpg",
+        "20avocado_6.jpg"
+      ],
+      "colorPick":"20avocado_5.jpg"
+    },
+    {
+      "colorClass": "21light_navy",
+      "colorName": "LIGHT NAVY",
+      "img": [
+        "21light_navy_1.jpg",
+        "21light_navy_2.jpg",
+        "21light_navy_3.jpg",
+        "21light_navy_4.jpg",
+        "21light_navy_5.jpg",
+        "21light_navy_6.jpg"
+      ],
+      "colorPick":"21light_navy_5.jpg"
+    },
+    {
+      "colorClass": "22dark_navy_blue",
+      "colorName": "DARK NAVY BLUE",
+      "img": [
+        "22dark_navy_blue_1.jpg",
+        "22dark_navy_blue_2.jpg",
+        "22dark_navy_blue_3.jpg",
+        "22dark_navy_blue_4.jpg",
+        "22dark_navy_blue_5.jpg",
+        "22dark_navy_blue_6.jpg"
+      ],
+      "colorPick":"22dark_navy_blue_5.jpg"
+    },
+    {
+      "colorClass": "23deep_gray",
+      "colorName": "DEEP GRAY",
+      "img": [
+        "23deep_gray_1.jpg",
+        "23deep_gray_2.jpg",
+        "23deep_gray_3.jpg",
+        "23deep_gray_4.jpg",
+        "23deep_gray_5.jpg",
+        "23deep_gray_6.jpg"
+      ],
+      "colorPick":"23deep_gray_5.jpg"
+    },
+    {
+      "colorClass": "24light_gray",
+      "colorName": "LIGHT GRAY",
+      "img": [
+        "24light_gray_1.jpg",
+        "24light_gray_2.jpg",
+        "24light_gray_3.jpg",
+        "24light_gray_4.jpg",
+        "24light_gray_5.jpg",
+        "24light_gray_6.jpg"
+      ],
+      "colorPick":"24light_gray_5.jpg"
+    },
+    {
+      "colorClass": "25topdyed",
+      "colorName": "GREY MELANGE",
+      "img": [
+        "25topdyed_1.jpg",
+        "25topdyed_2.jpg",
+        "25topdyed_3.jpg",
+        "25topdyed_4.jpg",
+        "25topdyed_5.jpg",
+        "25topdyed_6.jpg"
+      ],
+      "colorPick":"25topdyed_5.jpg"
+    },
+    {
+      "colorClass": "26black",
+      "colorName": "BLACK",
+      "img": [
+        "26black_1.jpg",
+        "26black_2.jpg",
+        "26black_3.jpg",
+        "26black_4.jpg",
+        "26black_5.jpg",
+        "26black_6.jpg"
+      ],
+      "colorPick":"26black_5.jpg"
+    }
+  ],
+  "detail": {
+    "sex": "unisex",
+    "otherLink": "",
+    "productName": "T-SHIRT NO.0020",
+    "para1": ["ชนิดผ้า 20 เซมิ Jersey", "100% Cotton"],
+    "sizeCM": [
+      ["S", "91", "66", "199.-"],
+      ["M", "101", "71", "199.-"],
+      ["L", "111", "76", "199.-"],
+      ["XL", "122", "78", "259.-"],
+      ["2XL", "132", "81", "259.-"],
+      ["3XL", "142", "83", "259.-"],
+      ["4XL", "152", "83", "259.-"]
+    ],
+    "sizeINC": [
+      ["S", "36", "26", "199.-"],
+      ["M", "40", "28", "199.-"],
+      ["L", "44", "30", "199.-"],
+      ["XL", "48", "31", "259.-"],
+      ["2XL", "52", "32", "259.-"],
+      ["3XL", "56", "33", "259.-"],
+      ["4XL", "60", "33", "259.-"]
+    ],
+    "para2": [
+      "*เสื้อขนาด 3XL และ 4XL ผลิตเฉพาะเสื้อสีขาว,สีดำและสีท็อปดราย เท่านั้น",
+      "*ราคาดังกล่าว เป็นราคาปลีกต่อตัวเท่านั้น หากลูกค้าต้องการราคาพิเศษ โปรดติดต่อเจ้าหน้าที่ได้โดยตรง"
+    ]
+  }
+}
