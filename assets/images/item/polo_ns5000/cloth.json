@@ -144,38 +144,35 @@
       "colorPick":"11dark_navy_blue_5.jpg"
     },
     {
-      "colorClass": "12topdyed",
-      "colorName": "GRAY MELANGE",
+      "colorClass": "12black",
+      "colorName": "BLACK",
       "img": [
-        "12topdyed_1.jpg",
-        "12topdyed_2.jpg",
-        "12topdyed_3.jpg",
-        "12topdyed_4.jpg",
-        "12topdyed_5.jpg",
-        "12topdyed_6.jpg"
+        "12black_1.jpg",
+        "12black_2.jpg",
+        "12black_3.jpg",
+        "12black_4.jpg",
+        "12black_5.jpg",
+        "12black_6.jpg"
       ],
-      "colorPick":"12topdyed_5.jpg"
+      "colorPick":"12black_5.jpg"
     }
   ],
   "detail": {
     "sex": "women",
     "otherLink": "http://noproblem.nupni.ml/no5000/",
     "productName": "POLO SHIRT NS.5000",
-    "para1": ["ชนิดผ้า 20 ค้อม จุติเก้ลาคอส", "100% Cotton"],
+    "para1": ["ชนิดผ้า 20 ค้อม จุติปิเก้ลาคอส", "100% Cotton"],
     "sizeCM": [
-      ["S", "81", "62", "380.-"],
       ["M", "86", "64.5", "380.-"],
       ["L", "91", "67", "380.-"],
       ["XL", "99", "70", "380.-"]
     ],
     "sizeINC": [
-      ["S", "32", "24.5", "380.-"],
       ["M", "34", "25.5", "380.-"],
       ["L", "36", "26.5", "380.-"],
       ["XL", "39", "27.5", "380.-"]
     ],
     "para2": [
-      "*เสื้อขนาด 3XL และ 4XL ผลิตเฉพาะเสื้อสีขาว,สีดำและสีท็อปดราย เท่านั้น",
       "*ราคาดังกล่าว เป็นราคาปลีกต่อตัวเท่านั้น หากลูกค้าต้องการราคาพิเศษ โปรดติดต่อเจ้าหน้าที่ได้โดยตรง"
     ]
   }

@@ -11,7 +11,7 @@
         "1white_5.jpg",
         "1white_6.jpg"
       ],
-      "colorPick":"1white_5.jpg"
+      "colorPick": "1white_5.jpg"
     },
     {
       "colorClass": "2yellow_topaz",
@@ -24,7 +24,7 @@
         "2yellow_topaz_5.jpg",
         "2yellow_topaz_6.jpg"
       ],
-      "colorPick":"2yellow_topaz_5.jpg"
+      "colorPick": "2yellow_topaz_5.jpg"
     },
     {
       "colorClass": "3orange_songea",
@@ -37,7 +37,7 @@
         "3orange_songea_5.jpg",
         "3orange_songea_6.jpg"
       ],
-      "colorPick":"3orange_songea_5.jpg"
+      "colorPick": "3orange_songea_5.jpg"
     },
     {
       "colorClass": "4pink_diamond",
@@ -50,7 +50,7 @@
         "4pink_diamond_5.jpg",
         "4pink_diamond_6.jpg"
       ],
-      "colorPick":"4pink_diamond_5.jpg"
+      "colorPick": "4pink_diamond_5.jpg"
     },
     {
       "colorClass": "5red_garnet",
@@ -63,7 +63,7 @@
         "5red_garnet_5.jpg",
         "5red_garnet_6.jpg"
       ],
-      "colorPick":"5red_garnet_5.jpg"
+      "colorPick": "5red_garnet_5.jpg"
     },
     {
       "colorClass": "6amethyst",
@@ -76,7 +76,7 @@
         "6amethyst_5.jpg",
         "6amethyst_6.jpg"
       ],
-      "colorPick":"6amethyst_5.jpg"
+      "colorPick": "6amethyst_5.jpg"
     },
     {
       "colorClass": "7blue_sapphire",
@@ -89,7 +89,7 @@
         "7blue_sapphire_5.jpg",
         "7blue_sapphire_6.jpg"
       ],
-      "colorPick":"7blue_sapphire_5.jpg"
+      "colorPick": "7blue_sapphire_5.jpg"
     },
     {
       "colorClass": "8green_peridot",
@@ -102,7 +102,7 @@
         "8green_peridot_5.jpg",
         "8green_peridot_6.jpg"
       ],
-      "colorPick":"8green_peridot_5.jpg"
+      "colorPick": "8green_peridot_5.jpg"
     },
     {
       "colorClass": "9blue_topaz",
@@ -115,7 +115,7 @@
         "9blue_topaz_5.jpg",
         "9blue_topaz_6.jpg"
       ],
-      "colorPick":"9blue_topaz_5.jpg"
+      "colorPick": "9blue_topaz_5.jpg"
     },
     {
       "colorClass": "10gray_melange",
@@ -128,7 +128,7 @@
         "10gray_melange_5.jpg",
         "10gray_melange_6.jpg"
       ],
-      "colorPick":"10gray_melange_5.jpg"
+      "colorPick": "10gray_melange_5.jpg"
     },
     {
       "colorClass": "11dark_navy_blue",
@@ -141,45 +141,42 @@
         "11dark_navy_blue_5.jpg",
         "11dark_navy_blue_6.jpg"
       ],
-      "colorPick":"11dark_navy_blue_5.jpg"
+      "colorPick": "11dark_navy_blue_5.jpg"
     },
     {
-      "colorClass": "12topdyed",
-      "colorName": "GRAY MELANGE",
+      "colorClass": "12black",
+      "colorName": "BLACK",
       "img": [
-        "12topdyed_1.jpg",
-        "12topdyed_2.jpg",
-        "12topdyed_3.jpg",
-        "12topdyed_4.jpg",
-        "12topdyed_5.jpg",
-        "12topdyed_6.jpg"
+        "12black_1.jpg",
+        "12black_2.jpg",
+        "12black_3.jpg",
+        "12black_4.jpg",
+        "12black_5.jpg",
+        "12black_6.jpg"
       ],
-      "colorPick":"12topdyed_5.jpg"
+      "colorPick": "12black_5.jpg"
     }
   ],
   "detail": {
     "sex": "men",
     "otherLink": "http://noproblem.nupni.ml/ns5000/",
     "productName": "POLO SHIRT NO.5000",
-    "para1": ["ชนิดผ้า 20 ค้อม จุติเก้ลาคอส", "100% Cotton"],
+    "para1": ["ชนิดผ้า 20 ค้อม จุติปิเก้ลาคอส", "100% Cotton"],
     "sizeCM": [
       ["S", "81", "71", "380.-"],
       ["M", "91", "73.5", "380.-"],
       ["L", "101", "76", "380.-"],
       ["XL", "111", "78", "480.-"],
-      ["2XL", "121", "81", "480.-"],
-      ["3XL", "142", "84", "480.-"]
+      ["2XL", "121", "81", "480.-"]
     ],
     "sizeINC": [
       ["S", "36", "28", "380.-"],
       ["M", "40", "29", "380.-"],
       ["L", "44", "30", "380.-"],
       ["XL", "48", "31", "480.-"],
-      ["2XL", "52", "32", "480.-"],
-      ["3XL", "56", "33", "580.-"]
+      ["2XL", "52", "32", "480.-"]
     ],
     "para2": [
-      "*เสื้อขนาด 3XL และ 4XL ผลิตเฉพาะเสื้อสีขาว,สีดำและสีท็อปดราย เท่านั้น",
       "*ราคาดังกล่าว เป็นราคาปลีกต่อตัวเท่านั้น หากลูกค้าต้องการราคาพิเศษ โปรดติดต่อเจ้าหน้าที่ได้โดยตรง"
     ]
   }
