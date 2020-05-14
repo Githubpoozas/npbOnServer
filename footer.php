@@ -27,6 +27,9 @@
   </label>
   <nav class="socialmedia__nav">
 	<ul class="socialmedia__list">
+	<li class="socialmedia__item">
+		<a href="https://line.me/ti/p/~nicknoproblem" target="_blank"><img class="btn-shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/line.svg" alt=""/></a>
+	  </li>
 	  <li class="socialmedia__item">
 		<a href="https://wa.me/66817741166" target="_blank"><img class="btn-shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/whatsapp.svg" alt=""/></a>
 	  </li>
@@ -35,9 +38,7 @@
 		  <img class="btn-shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/facebook.svg" alt=""/>
 		</a>
 	  </li>
-	  <li class="socialmedia__item">
-		<a href="https://line.me/ti/p/~nicknoproblem" target="_blank"><img class="btn-shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/line.svg" alt=""/></a>
-	  </li>
+
 	  <li class="socialmedia__item">
 		<a href="https://m.me/Noproblemtshirt/" target="_blank"><img class="btn-shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/messenger.svg" alt=""/></a>
 	  </li>
@@ -81,11 +82,11 @@
 		<p class="footer__name">SOCIAL MEDIA</p>
 	  </div>
 	  <div class="footer__social footer__social-2">
+	  <a href="https://line.me/ti/p/~nicknoproblem" target="_blank"><img class="btn-shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/line.svg" alt=""/></a>
 		<a href="https://wa.me/66817741166" target="_blank"><img class="btn-shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/whatsapp.svg" alt=""/></a>
 		<a href="https://www.facebook.com/130047820416542/" target="_blank">
 		  <img class="btn-shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/facebook.svg" alt=""/>
 		</a>
-		<a href="https://line.me/ti/p/~nicknoproblem" target="_blank"><img class="btn-shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/line.svg" alt=""/></a>
 		<a href="https://m.me/Noproblemtshirt/" target="_blank"><img class="btn-shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/messenger.svg" alt=""/></a>
 		<a href="<?php echo $_SERVER['HTTP_HOST']; ?>/qr" target="_blank"><img id="wechat_bottom" class="btn-shadow wechat" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/wechat.svg" alt=""/></a>
 	  </div>

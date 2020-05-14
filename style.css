@@ -7590,11 +7590,11 @@ input.socialmedia__checkbox {
   width: 100%;
 }
 
-@supports not (width: max-content) {
+/* @supports not (width: max-content) {
   .socialmedia__rotated {
     padding: 13px;
   }
-}
+} */
 
 @media only screen and (min-width: 156.25em) {
   .socialmedia__rotated {
@@ -7820,11 +7820,12 @@ input.socialmedia__checkbox {
 .footer__box {
   margin: 0 auto;
   max-width: 1188px;
+  width:100%;
   color: #ffffff;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr 2fr;
-      grid-template-columns: 1fr 2fr 2fr;
+  -ms-grid-columns: 3fr 4fr 4fr;
+      grid-template-columns: 3fr 4fr 4fr;
 }
 .footer__contacts,
 .footer__socials{
