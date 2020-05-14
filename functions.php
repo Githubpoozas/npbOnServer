@@ -1235,9 +1235,12 @@ echo '</div>
 <div class="detail-description__size-table u-margin-bottom-small">
 	<div class="detail-description__size-table__measure">
 	<p id="colorName1">'.$defaultGallery["colorName"].'</p>
-      <button class="btn--gray detail-description__size-table__measure__cm">CM</button>
-      <button class="btn--gray btn--gray-light detail-description__size-table__measure__inc">INC</button>
-    </div>
+	<p id="colorNameTH1">'.$defaultGallery["colorNameTH"].'</p>
+      <button class="btn--gray detail-description__size-table__measure__cm btn--gray-light">CM</button>
+      <button class="btn--gray detail-description__size-table__measure__inc">INC</button>
+	</div>
+	
+
     <table class="detail-description__size-table__cm">
       <tr>
         <th>ไซส์<br />Size</th>
@@ -1253,6 +1256,8 @@ echo '</div>
 		 echo '</tr>';
 	 }
 echo '</table>
+
+
 <table class="detail-description__size-table__inc">
   <tr>
 	<th>ไซส์<br />Size</th>
@@ -1274,13 +1279,22 @@ if($index == 1 || $index == 2){
 	echo '</tr>';
   }
   echo '</table>
+
+
   </div>
  <div class="detail-description__text">';
  foreach($detail["para2"] as $para){
 	 echo '<p>'.$para.'</p>';
  }
  echo '</div>
-<div class="detail-socialmedia u-margin-bottom-medium">
+<div class="detail-socialmedia u-margin-bottom-medium u-margin-top-medium">
+
+<a href="https://line.me/ti/p/~nicknoproblem" target="_blank">
+ <div class="detail-socialmedia-button btn-shadow btn-line">
+ <i class="fab fa-line"></i><label>Line</label>
+ </div>
+</a>
+
 <a href="https://wa.me/66817741166" target="_blank">
  <div class="detail-socialmedia-button btn-shadow btn-whatsapp">
  <i class="fab fa-whatsapp"></i><label>WhatsApp</label>
@@ -1289,12 +1303,6 @@ if($index == 1 || $index == 2){
 <a href="https://www.facebook.com/130047820416542/" target="_blank">
  <div class="detail-socialmedia-button btn-shadow btn-facebook">
  <i class="fab fa-facebook-f"></i><label>Facebook</label>
- </div>
-</a>
-
-<a href="https://line.me/ti/p/~nicknoproblem" target="_blank">
- <div class="detail-socialmedia-button btn-shadow btn-line">
- <i class="fab fa-line"></i><label>Line</label>
  </div>
 </a>
 
@@ -1315,6 +1323,7 @@ if($index == 1 || $index == 2){
 
 echo '<div class="item__section-color">
 <p id="colorName2">'.$defaultGallery["colorName"].'</p>
+<p id="colorNameTH2">'.$defaultGallery["colorNameTH"].'</p>
 <div class="item__color">';
 
 foreach($gallery as $color){
@@ -1332,6 +1341,7 @@ echo '<section class="item__preload">';
 foreach($gallery as $color){
 	echo '<div class="item__preload-container '.$color['colorClass'].'">
 	<p class="item__preload-colorName">'.$color['colorName'].'</p>
+	<p class="item__preload-colorName-th">'.$color['colorNameTH'].'</p>
 	';
 	foreach($color['img'] as $img){
 		getImg($dir,$img,'item__preload__img');

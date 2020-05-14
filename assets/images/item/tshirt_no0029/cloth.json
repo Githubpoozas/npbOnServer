@@ -3,6 +3,7 @@
     {
       "colorClass": "1white",
       "colorName": "White",
+      "colorNameTH": "สีขาว",
       "img": [
         "1white_1.jpg",
         "1white_2.jpg",
@@ -11,11 +12,12 @@
         "1white_5.jpg",
         "1white_6.jpg"
       ],
-      "colorPick":"1white_5.jpg"
+      "colorPick": "1white_5.jpg"
     },
     {
       "colorClass": "2topdyed",
       "colorName": "Grey Melange",
+      "colorNameTH": "สีท็อปดราย",
       "img": [
         "2topdyed_1.jpg",
         "2topdyed_2.jpg",
@@ -24,11 +26,12 @@
         "2topdyed_5.jpg",
         "2topdyed_6.jpg"
       ],
-      "colorPick":"2topdyed_5.jpg"
+      "colorPick": "2topdyed_5.jpg"
     },
     {
       "colorClass": "3black",
       "colorName": "Black",
+      "colorNameTH": "สีดำ",
       "img": [
         "3black_1.jpg",
         "3black_2.jpg",
@@ -37,14 +40,14 @@
         "3black_5.jpg",
         "3black_6.jpg"
       ],
-      "colorPick":"3black_5.jpg"
+      "colorPick": "3black_5.jpg"
     }
   ],
   "detail": {
     "sex": "unisex",
     "otherLink": "",
     "productName": "T-SHIRT NO.0029",
-    "para1": ["ชนิดผ้า 20 เซมิ Jersey", "100% Cotton"],
+    "para1": ["ชนิดผ้า 20 เซมิ Jersey 100% Cotton"],
     "sizeCM": [
       ["S", "91", "66", "199.-"],
       ["M", "101", "71", "199.-"],
@@ -60,8 +63,8 @@
       ["2XL", "52", "32", "259.-"]
     ],
     "para2": [
-      "*ราคาดังกล่าว เป็นราคาปลีกต่อตัวเท่านั้น",
-      "หากลูกค้าต้องการราคาพิเศษ โปรดติดต่อเจ้าหน้าที่ได้โดยตรง"
+      "*ราคาที่แสดงในตาราง เป็นราคาปลีกต่อตัวเท่านั้น",
+      "หากสนใจสินค้าจำนวนมากในราคาพิเศษ โปรดกดลิ้งค์ด้านล่างเพื่อติดต่อเจ้าหน้าที่"
     ]
   }
 }

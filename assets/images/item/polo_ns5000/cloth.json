@@ -3,6 +3,7 @@
     {
       "colorClass": "1white",
       "colorName": "WHITE",
+      "colorNameTH": "สีขาว",
       "img": [
         "1white_1.jpg",
         "1white_2.jpg",
@@ -11,11 +12,12 @@
         "1white_5.jpg",
         "1white_6.jpg"
       ],
-      "colorPick":"1white_5.jpg"
+      "colorPick": "1white_5.jpg"
     },
     {
       "colorClass": "2yellow_topaz",
       "colorName": "YELLOW TOPAZ",
+      "colorNameTH": "สีเหลืองบุษราคัม",
       "img": [
         "2yellow_topaz_1.jpg",
         "2yellow_topaz_2.jpg",
@@ -24,11 +26,12 @@
         "2yellow_topaz_5.jpg",
         "2yellow_topaz_6.jpg"
       ],
-      "colorPick":"2yellow_topaz_5.jpg"
+      "colorPick": "2yellow_topaz_5.jpg"
     },
     {
       "colorClass": "3orange_songea",
       "colorName": "ORANGE SONGEA",
+      "colorNameTH": "สีส้มซองเจีย",
       "img": [
         "3orange_songea_1.jpg",
         "3orange_songea_2.jpg",
@@ -37,11 +40,12 @@
         "3orange_songea_5.jpg",
         "3orange_songea_6.jpg"
       ],
-      "colorPick":"3orange_songea_5.jpg"
+      "colorPick": "3orange_songea_5.jpg"
     },
     {
       "colorClass": "4pink_diamond",
       "colorName": "PINK DIAMOND",
+      "colorNameTH": "สีบานเย็นไดมอนด์",
       "img": [
         "4pink_diamond_1.jpg",
         "4pink_diamond_2.jpg",
@@ -50,11 +54,12 @@
         "4pink_diamond_5.jpg",
         "4pink_diamond_6.jpg"
       ],
-      "colorPick":"4pink_diamond_5.jpg"
+      "colorPick": "4pink_diamond_5.jpg"
     },
     {
       "colorClass": "5red_garnet",
       "colorName": "RED GARNET",
+      "colorNameTH": "สีแดงโกเมน",
       "img": [
         "5red_garnet_1.jpg",
         "5red_garnet_2.jpg",
@@ -63,11 +68,12 @@
         "5red_garnet_5.jpg",
         "5red_garnet_6.jpg"
       ],
-      "colorPick":"5red_garnet_5.jpg"
+      "colorPick": "5red_garnet_5.jpg"
     },
     {
       "colorClass": "6amethyst",
       "colorName": "AMETHYST",
+      "colorNameTH": "สีม่วงอาเมทิส",
       "img": [
         "6amethyst_1.jpg",
         "6amethyst_2.jpg",
@@ -76,11 +82,12 @@
         "6amethyst_5.jpg",
         "6amethyst_6.jpg"
       ],
-      "colorPick":"6amethyst_5.jpg"
+      "colorPick": "6amethyst_5.jpg"
     },
     {
       "colorClass": "7blue_sapphire",
       "colorName": "BLUE SAPPHIRE",
+      "colorNameTH": "สีน้ำเงินซัฟไฟร์",
       "img": [
         "7blue_sapphire_1.jpg",
         "7blue_sapphire_2.jpg",
@@ -89,11 +96,12 @@
         "7blue_sapphire_5.jpg",
         "7blue_sapphire_6.jpg"
       ],
-      "colorPick":"7blue_sapphire_5.jpg"
+      "colorPick": "7blue_sapphire_5.jpg"
     },
     {
       "colorClass": "8green_peridot",
       "colorName": "GREEN PERIDOT",
+      "colorNameTH": "สีเขียวเพริโดต์",
       "img": [
         "8green_peridot_1.jpg",
         "8green_peridot_2.jpg",
@@ -102,11 +110,12 @@
         "8green_peridot_5.jpg",
         "8green_peridot_6.jpg"
       ],
-      "colorPick":"8green_peridot_5.jpg"
+      "colorPick": "8green_peridot_5.jpg"
     },
     {
       "colorClass": "9blue_topaz",
       "colorName": "BLUE TOPAZ",
+      "colorNameTH": "สีเหลืองบุษราคัม",
       "img": [
         "9blue_topaz_1.jpg",
         "9blue_topaz_2.jpg",
@@ -115,11 +124,12 @@
         "9blue_topaz_5.jpg",
         "9blue_topaz_6.jpg"
       ],
-      "colorPick":"9blue_topaz_5.jpg"
+      "colorPick": "9blue_topaz_5.jpg"
     },
     {
       "colorClass": "10gray_melange",
       "colorName": "GRAY MELANGE",
+      "colorNameTH": "สีท็อปดราย",
       "img": [
         "10gray_melange_1.jpg",
         "10gray_melange_2.jpg",
@@ -128,11 +138,12 @@
         "10gray_melange_5.jpg",
         "10gray_melange_6.jpg"
       ],
-      "colorPick":"10gray_melange_5.jpg"
+      "colorPick": "10gray_melange_5.jpg"
     },
     {
       "colorClass": "11dark_navy_blue",
       "colorName": "DARK NAVY BLUE",
+      "colorNameTH": "สีกรมเข้ม",
       "img": [
         "11dark_navy_blue_1.jpg",
         "11dark_navy_blue_2.jpg",
@@ -141,11 +152,12 @@
         "11dark_navy_blue_5.jpg",
         "11dark_navy_blue_6.jpg"
       ],
-      "colorPick":"11dark_navy_blue_5.jpg"
+      "colorPick": "11dark_navy_blue_5.jpg"
     },
     {
       "colorClass": "12black",
       "colorName": "BLACK",
+      "colorNameTH": "สีดำ",
       "img": [
         "12black_1.jpg",
         "12black_2.jpg",
@@ -154,14 +166,14 @@
         "12black_5.jpg",
         "12black_6.jpg"
       ],
-      "colorPick":"12black_5.jpg"
+      "colorPick": "12black_5.jpg"
     }
   ],
   "detail": {
     "sex": "women",
     "otherLink": "http://noproblem.nupni.ml/no5000/",
     "productName": "POLO SHIRT NS.5000",
-    "para1": ["ชนิดผ้า 20 ค้อม จูติปิเก้ลาคอส", "100% Cotton"],
+    "para1": ["ชนิดผ้า 20 ค้อม จูติปิเก้ลาคอส 100% Cotton"],
     "sizeCM": [
       ["M", "86", "64.5", "380.-"],
       ["L", "91", "67", "380.-"],
@@ -173,7 +185,8 @@
       ["XL", "39", "27.5", "380.-"]
     ],
     "para2": [
-      "*ราคาดังกล่าว เป็นราคาปลีกต่อตัวเท่านั้น หากลูกค้าต้องการราคาพิเศษ โปรดติดต่อเจ้าหน้าที่ได้โดยตรง"
+      "*ราคาที่แสดงในตาราง เป็นราคาปลีกต่อตัวเท่านั้น",
+      "หากสนใจสินค้าจำนวนมากในราคาพิเศษ โปรดกดลิ้งค์ด้านล่างเพื่อติดต่อเจ้าหน้าที่"
     ]
   }
 }

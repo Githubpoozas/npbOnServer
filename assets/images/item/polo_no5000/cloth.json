@@ -3,6 +3,7 @@
     {
       "colorClass": "1white",
       "colorName": "WHITE",
+      "colorNameTH": "สีขาว",
       "img": [
         "1white_1.jpg",
         "1white_2.jpg",
@@ -16,6 +17,7 @@
     {
       "colorClass": "2yellow_topaz",
       "colorName": "YELLOW TOPAZ",
+      "colorNameTH": "สีเหลืองบุษราคัม",
       "img": [
         "2yellow_topaz_1.jpg",
         "2yellow_topaz_2.jpg",
@@ -29,6 +31,7 @@
     {
       "colorClass": "3orange_songea",
       "colorName": "ORANGE SONGEA",
+      "colorNameTH": "สีส้มซองเจีย",
       "img": [
         "3orange_songea_1.jpg",
         "3orange_songea_2.jpg",
@@ -42,6 +45,7 @@
     {
       "colorClass": "4pink_diamond",
       "colorName": "PINK DIAMOND",
+      "colorNameTH": "สีบานเย็นไดมอนด์",
       "img": [
         "4pink_diamond_1.jpg",
         "4pink_diamond_2.jpg",
@@ -55,6 +59,7 @@
     {
       "colorClass": "5red_garnet",
       "colorName": "RED GARNET",
+      "colorNameTH": "สีแดงโกเมน",
       "img": [
         "5red_garnet_1.jpg",
         "5red_garnet_2.jpg",
@@ -68,6 +73,7 @@
     {
       "colorClass": "6amethyst",
       "colorName": "AMETHYST",
+      "colorNameTH": "สีม่วงอาเมทิส",
       "img": [
         "6amethyst_1.jpg",
         "6amethyst_2.jpg",
@@ -81,6 +87,7 @@
     {
       "colorClass": "7blue_sapphire",
       "colorName": "BLUE SAPPHIRE",
+      "colorNameTH": "สีน้ำเงินซัฟไฟร์",
       "img": [
         "7blue_sapphire_1.jpg",
         "7blue_sapphire_2.jpg",
@@ -94,6 +101,7 @@
     {
       "colorClass": "8green_peridot",
       "colorName": "GREEN PERIDOT",
+      "colorNameTH": "สีเขียวเพริโดต์",
       "img": [
         "8green_peridot_1.jpg",
         "8green_peridot_2.jpg",
@@ -107,6 +115,7 @@
     {
       "colorClass": "9blue_topaz",
       "colorName": "BLUE TOPAZ",
+      "colorNameTH": "สีฟ้าโทปาส",
       "img": [
         "9blue_topaz_1.jpg",
         "9blue_topaz_2.jpg",
@@ -120,6 +129,7 @@
     {
       "colorClass": "10gray_melange",
       "colorName": "GRAY MELANGE",
+      "colorNameTH": "สีท็อปดราย",
       "img": [
         "10gray_melange_1.jpg",
         "10gray_melange_2.jpg",
@@ -133,6 +143,7 @@
     {
       "colorClass": "11dark_navy_blue",
       "colorName": "DARK NAVY BLUE",
+      "colorNameTH": "สีกรมเข้ม",
       "img": [
         "11dark_navy_blue_1.jpg",
         "11dark_navy_blue_2.jpg",
@@ -146,6 +157,7 @@
     {
       "colorClass": "12black",
       "colorName": "BLACK",
+      "colorNameTH": "สีดำ",
       "img": [
         "12black_1.jpg",
         "12black_2.jpg",
@@ -161,7 +173,7 @@
     "sex": "men",
     "otherLink": "http://noproblem.nupni.ml/ns5000/",
     "productName": "POLO SHIRT NO.5000",
-    "para1": ["ชนิดผ้า 20 ค้อม จูติปิเก้ลาคอส", "100% Cotton"],
+    "para1": ["ชนิดผ้า 20 ค้อม จูติปิเก้ลาคอส 100% Cotton"],
     "sizeCM": [
       ["S", "81", "71", "380.-"],
       ["M", "91", "73.5", "380.-"],
@@ -177,7 +189,8 @@
       ["2XL", "52", "32", "480.-"]
     ],
     "para2": [
-      "*ราคาดังกล่าว เป็นราคาปลีกต่อตัวเท่านั้น หากลูกค้าต้องการราคาพิเศษ โปรดติดต่อเจ้าหน้าที่ได้โดยตรง"
+      "*ราคาที่แสดงในตาราง เป็นราคาปลีกต่อตัวเท่านั้น",
+      "หากสนใจสินค้าจำนวนมากในราคาพิเศษ โปรดกดลิ้งค์ด้านล่างเพื่อติดต่อเจ้าหน้าที่"
     ]
   }
 }

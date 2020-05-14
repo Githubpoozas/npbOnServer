@@ -3,6 +3,7 @@
     {
       "colorClass": "1white",
       "colorName": "WHITE",
+      "colorNameTH": "สีขาว",
       "img": [
         "1white_1.jpg",
         "1white_2.jpg",
@@ -11,11 +12,12 @@
         "1white_5.jpg",
         "1white_6.jpg"
       ],
-      "colorPick":"1white_5.jpg"
+      "colorPick": "1white_5.jpg"
     },
     {
       "colorClass": "2yellow",
       "colorName": "YELLOW",
+      "colorNameTH": "สีเหลืองวันพ่อ",
       "img": [
         "2yellow_1.jpg",
         "2yellow_2.jpg",
@@ -24,11 +26,12 @@
         "2yellow_5.jpg",
         "2yellow_6.jpg"
       ],
-      "colorPick":"2yellow_5.jpg"
+      "colorPick": "2yellow_5.jpg"
     },
     {
       "colorClass": "3caramel",
       "colorName": "CARAMEL",
+      "colorNameTH": "สีเอสเปรสโซ",
       "img": [
         "3caramel_1.jpg",
         "3caramel_2.jpg",
@@ -37,11 +40,12 @@
         "3caramel_5.jpg",
         "3caramel_6.jpg"
       ],
-      "colorPick":"3caramel_5.jpg"
+      "colorPick": "3caramel_5.jpg"
     },
     {
       "colorClass": "4orange",
       "colorName": "ORANGE",
+      "colorNameTH": "สีแดงอมส้ม",
       "img": [
         "4orange_1.jpg",
         "4orange_2.jpg",
@@ -50,11 +54,12 @@
         "4orange_5.jpg",
         "4orange_6.jpg"
       ],
-      "colorPick":"4orange_5.jpg"
+      "colorPick": "4orange_5.jpg"
     },
     {
       "colorClass": "5pink",
       "colorName": "PINK",
+      "colorNameTH": "สีบานเย็น",
       "img": [
         "5pink_1.jpg",
         "5pink_2.jpg",
@@ -63,11 +68,12 @@
         "5pink_5.jpg",
         "5pink_6.jpg"
       ],
-      "colorPick":"5pink_5.jpg"
+      "colorPick": "5pink_5.jpg"
     },
     {
       "colorClass": "6red",
       "colorName": "RED",
+      "colorNameTH": "สีแดงอมส้ม",
       "img": [
         "6red_1.jpg",
         "6red_2.jpg",
@@ -76,11 +82,12 @@
         "6red_5.jpg",
         "6red_6.jpg"
       ],
-      "colorPick":"6red_5.jpg"
+      "colorPick": "6red_5.jpg"
     },
     {
       "colorClass": "7maroon",
       "colorName": "MAROON",
+      "colorNameTH": "สีเลือดหมู",
       "img": [
         "7maroon_1.jpg",
         "7maroon_2.jpg",
@@ -89,11 +96,12 @@
         "7maroon_5.jpg",
         "7maroon_6.jpg"
       ],
-      "colorPick":"7maroon_5.jpg"
+      "colorPick": "7maroon_5.jpg"
     },
     {
       "colorClass": "8deep_blue",
       "colorName": "DEEP BLUE",
+      "colorNameTH": "สีรอยัลบลู",
       "img": [
         "8deep_blue_1.jpg",
         "8deep_blue_2.jpg",
@@ -102,11 +110,12 @@
         "8deep_blue_5.jpg",
         "8deep_blue_6.jpg"
       ],
-      "colorPick":"8deep_blue_5.jpg"
+      "colorPick": "8deep_blue_5.jpg"
     },
     {
       "colorClass": "9mint",
       "colorName": "MINT",
+      "colorNameTH": "สีเขียวมิ้นต์",
       "img": [
         "9mint_1.jpg",
         "9mint_2.jpg",
@@ -115,11 +124,12 @@
         "9mint_5.jpg",
         "9mint_6.jpg"
       ],
-      "colorPick":"9mint_5.jpg"
+      "colorPick": "9mint_5.jpg"
     },
     {
       "colorClass": "10blue",
       "colorName": "BLUE",
+      "colorNameTH": "สีฟ้าสด",
       "img": [
         "10blue_1.jpg",
         "10blue_2.jpg",
@@ -128,11 +138,12 @@
         "10blue_5.jpg",
         "10blue_6.jpg"
       ],
-      "colorPick":"10blue_5.jpg"
+      "colorPick": "10blue_5.jpg"
     },
     {
       "colorClass": "11gray",
       "colorName": "GRAY",
+      "colorNameTH": "สีเทาเข้ม",
       "img": [
         "11gray_1.jpg",
         "11gray_2.jpg",
@@ -141,11 +152,12 @@
         "11gray_5.jpg",
         "11gray_6.jpg"
       ],
-      "colorPick":"11gray_5.jpg"
+      "colorPick": "11gray_5.jpg"
     },
     {
       "colorClass": "12topdyed",
       "colorName": "GRAY MELANGE",
+      "colorNameTH": "สีท็อปดราย",
       "img": [
         "12topdyed_1.jpg",
         "12topdyed_2.jpg",
@@ -154,11 +166,12 @@
         "12topdyed_5.jpg",
         "12topdyed_6.jpg"
       ],
-      "colorPick":"12topdyed_5.jpg"
+      "colorPick": "12topdyed_5.jpg"
     },
     {
       "colorClass": "13black",
       "colorName": "BLACK",
+      "colorNameTH": "สีดำ",
       "img": [
         "13black_1.jpg",
         "13black_2.jpg",
@@ -167,14 +180,14 @@
         "13black_5.jpg",
         "13black_6.jpg"
       ],
-      "colorPick":"13black_5.jpg"
+      "colorPick": "13black_5.jpg"
     }
   ],
   "detail": {
     "sex": "unisex",
     "otherLink": "",
     "productName": "T-SHIRT OV.101",
-    "para1": ["ชนิดผ้า 32 เซมิ Jersey", "100% Cotton"],
+    "para1": ["ชนิดผ้า 32 เซมิ Jersey 100% Cotton"],
     "sizeCM": [
       ["S", "81", "66", "199.-"],
       ["M", "91", "68.5", "199.-"],
@@ -190,7 +203,8 @@
       ["2XL", "48", "30", "199.-"]
     ],
     "para2": [
-      "*ราคาดังกล่าว เป็นราคาปลีกต่อตัวเท่านั้น หากลูกค้าต้องการราคาพิเศษ โปรดติดต่อเจ้าหน้าที่ได้โดยตรง"
+      "*ราคาที่แสดงในตาราง เป็นราคาปลีกต่อตัวเท่านั้น",
+      "หากสนใจสินค้าจำนวนมากในราคาพิเศษ โปรดกดลิ้งค์ด้านล่างเพื่อติดต่อเจ้าหน้าที่"
     ]
   }
 }

@@ -14,8 +14,11 @@ jQuery(document).ready(function () {
   function changeColor(colorName){
     let preloadContainer = jQuery(".item__preload-container." + colorName);
     let displayName = preloadContainer.find(".item__preload-colorName").text();
+    let displayNameTH = preloadContainer.find(".item__preload-colorName-th").text();
     jQuery("#colorName1").text(displayName);
+    jQuery("#colorNameTH1").text(displayNameTH);
     jQuery("#colorName2").text(displayName);
+    jQuery("#colorNameTH2").text(displayNameTH);
 
     jQuery(preloadContainer).find(".item__preload__img").each(function (index) {
       let srcImg = jQuery(this).attr("src");
