@@ -1737,8 +1737,9 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
 
 .secondTitle {
   display: block;
-  font-size:15px;
-  
+  font-size: 15px;
+  font-weight:400;
+
 }
 @media only screen and (max-width: 900px) {
   .secondTitle {
@@ -6409,7 +6410,7 @@ ul.primary-menu {
   font-size: 2rem;
   display: block;
   padding: 1.6rem 3.7rem;
-  text-align:center;
+  text-align: center;
 }
 
 .header-navigation-wrapper .primary-menu-wrapper .primary-menu > li:hover,
@@ -6494,14 +6495,15 @@ ul.primary-menu {
 #appendHome {
   font-size: 2rem;
   height: 100%;
-  padding: 1.6rem 2.2rem;
+  padding: 1.2rem 2.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   color: #f2f2f2;
+  font-weight:700;
 }
 
 @media only screen and (min-width: 900px) {
@@ -6509,6 +6511,13 @@ ul.primary-menu {
     display: none;
     color: blue;
   }
+}
+
+.secondHome {
+  font-size: 15px;
+  margin-left: 5px;
+  font-weight:400;
+
 }
 
 /* class btn ------------------------------------------------------------------------------*/
@@ -6850,7 +6859,7 @@ figure.wp-block-image {
 
 .swiper-slide__slide3__button-right:focus,
 .swiper-slide__slide3__button-left:focus {
-  outline:none;
+  outline: none;
 }
 
 .swiper-slide__slide3__button-left {
@@ -6882,37 +6891,34 @@ figure.wp-block-image {
   cursor: pointer;
 }
 
-.open.fixed{
+.open.fixed {
   position: fixed;
   bottom: 0;
-  left:0;
+  left: 0;
   z-index: 500;
   background-color: white;
   width: 100%;
   padding-bottom: 5px;
 }
 
-
-.seemore__less-fixed{
-  padding-bottom:5px;
+.seemore__less-fixed {
+  padding-bottom: 5px;
   position: fixed;
   bottom: 0;
-  left:0;
+  left: 0;
   z-index: 500;
   background-color: red;
   width: 100%;
 
   visibility: hidden;
-opacity:0;
-display:none;
+  opacity: 0;
+  display: none;
 }
 
-
-
-.seemore.open .seemore__less-fixed.show{
+.seemore.open .seemore__less-fixed.show {
   visibility: visible;
-  opacity:1;
-  display:block;
+  opacity: 1;
+  display: block;
 }
 
 .seemore__text-more {
@@ -7209,7 +7215,7 @@ display:none;
   }
 }
 
-.detail-socialmedia-header{
+.detail-socialmedia-header {
   grid-column: 1/4;
 }
 

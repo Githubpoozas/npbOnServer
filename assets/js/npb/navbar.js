@@ -46,5 +46,5 @@ jQuery(document).ready(function() {
 
   });
   
-  jQuery(".header-titles-wrapper").append("<a href='http://noproblem.nupni.ml/' id='appendHome'>HOME หน้าแรก</a>");
+  jQuery(".header-titles-wrapper").append("<a href='http://noproblem.nupni.ml/' id='appendHome'>HOME <span class='secondHome'>หน้าแรก</span></a>");
 });
