@@ -39,7 +39,7 @@ jQuery(document).ready(function() {
         jQuery("#site-header").css("top", 0);
       }
     } else {
-      jQuery("#site-header").css("top", "-62px");
+      jQuery("#site-header").css("top", "-100px");
     }
 
     prevScrollpos = currentScrollPos;

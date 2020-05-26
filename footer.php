@@ -77,11 +77,11 @@
 		<p>เวลาทำการ จันทร์-เสาร์ เวลา 08:00-17:00</p>
 	  </div>
 	</div>
-	<div class="footer__socials">
-	  <div class="footer__social footer__social-1">
+	<div class="footer__socialsMedia">
+	  <div class="footer__socialMedia footer__socialMedia-1">
 		<p class="footer__name">SOCIAL MEDIA</p>
 	  </div>
-	  <div class="footer__social footer__social-2">
+	  <div class="footer__socialMedia footer__socialMedia-2">
 	  <a href="https://line.me/ti/p/~nicknoproblem" target="_blank"><img class="btn-shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/line.svg" alt=""/></a>
 		<a href="https://wa.me/66817741166" target="_blank"><img class="btn-shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/whatsapp.svg" alt=""/></a>
 		<a href="https://www.facebook.com/130047820416542/" target="_blank">
@@ -90,31 +90,8 @@
 		<a href="https://m.me/Noproblemtshirt/" target="_blank"><img class="btn-shadow" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/messenger.svg" alt=""/></a>
 		<a href="<?php echo $_SERVER['HTTP_HOST']; ?>/qr" target="_blank"><img id="wechat_bottom" class="btn-shadow wechat" src="<?php echo get_template_directory_uri(); ?>/assets/images/socialmedia/wechat.svg" alt=""/></a>
 	  </div>
-	  <!-- <div class="footer__social footer__social-wechat">
-		<div class="wechatbox">
-			<label for="wechatqr2">WeChat ID</label>
-<input type="text" value="natika001" id="wechatqr2" readonly="">
-<i class="far fa-copy copyicon btn-shadow" onclick="copyqr2()">
-  <span class="popuptext" id="myPopup2">Copied: natika001</span></i></div>
-	  </div> -->
-	  <!-- <div class="footer__social footer__social-3">
-		<p>Line ID</p>
-		<p>nicknoproblem</p>
-	  </div>
-	  <div class="footer__social footer__social-3">
-		<p>WeChat ID</p>
-		<p>natika001</p>
-	  </div>
-	  <div class="footer__social footer__social-3">
-		<p>CALL</p>
-		<p><a href="tel:0817741166">081-774-1166</a></p>
-	  </div>
-	  <div class="footer__social footer__social-4">
-		<p>EMAIL</p>
-		<p><a href="mailto:nicknoproblem@gmail.com">nicknoproblem@gmail.com</a></p>
-	  </div> -->
 
-	  <div class="footer__social footer__social-3">
+	  <div class="footer__socialMedia footer__socialMedia-3">
 		<p>Line</p>
 		<p>nicknoproblem</p>
 		<p>WeChat</p>

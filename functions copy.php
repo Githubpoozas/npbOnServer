@@ -145,6 +145,13 @@ function twentytwenty_theme_support() {
 
 add_action( 'after_setup_theme', 'twentytwenty_theme_support' );
 
+/* Load default fonts*/
+function myprefix_enqueue_google_fonts() { 
+	wp_enqueue_style( 'lato', 'https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap' ); 
+	wp_enqueue_style( 'kanit', 'https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap' ); 
+}
+add_action( 'wp_enqueue_scripts', 'myprefix_enqueue_google_fonts' ); 
+
 /**
  * REQUIRED FILES
  * Include required files.
@@ -213,8 +220,7 @@ function twentytwenty_register_scripts() {
 	
 
 	// noproblem css
-	wp_enqueue_style( 'noproblem-lato', '//fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900&display=swap', false, null, 'all' );
-	wp_enqueue_style( 'noproblem-kanit', '//fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900&display=swap', false, null, 'all' );
+
 	wp_enqueue_style( 'swiper-css',  get_template_directory_uri() . '/assets/css/swiper.min.css', false,'5.2.1', 'all' );
 	wp_enqueue_style( 'bootstrap',  get_template_directory_uri() . '/assets/css/bootstrap.min.css', false,'4.3.1', 'all' );
 
@@ -229,8 +235,6 @@ function twentytwenty_register_scripts() {
 	wp_enqueue_script( 'swiper_detail', get_template_directory_uri() . '/assets/js/npb/swiper_detail.js', array('jquery'), $theme_version, true );
 	wp_enqueue_script( 'size-table', get_template_directory_uri() . '/assets/js/npb/size-table.js', array('jquery'), $theme_version, true );
 	wp_enqueue_script( 'color-picker', get_template_directory_uri() . '/assets/js/npb/color-picker.js', array('jquery'), $theme_version, true );
-
-	
 
 
 }
@@ -800,14 +804,14 @@ function getImg($dir,$neededImg,$imgClass){
 }
 
 // get Gallery top and thumb
-function getGallery($dir){
+function getGallery($dir,$csvFile){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
 
     echo
     '
     <div class="swiper-container gallery-thumbs detail-thumb">
               <div class="swiper-wrapper detail-thumb__wrapper">';
-              $csv = fopen($csvPath.'Book1.csv','r');
+              $csv = fopen($csvPath.$csvFile,'r');
                 while (($data = fgetcsv($csv)) !== FALSE) {
                   $data = str_replace("\xEF\xBB\xBF",'',$data); 
                   if($data[8] === 'break'){
@@ -825,7 +829,7 @@ function getGallery($dir){
     
         <div class="swiper-container gallery-top detail-top">
           <div class="swiper-wrapper detail-top__wrapper">';
-    $csv = fopen($csvPath.'Book1.csv','r');
+    $csv = fopen($csvPath.$csvFile,'r');
                 while (($data = fgetcsv($csv)) !== FALSE) {
                   $data = str_replace("\xEF\xBB\xBF",'',$data); 
     
@@ -845,11 +849,11 @@ function getGallery($dir){
 
 
 
-function getDescription($dir){
+function getDescription($dir,$csvFile){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
 
    echo '<div class="detail-description__text">';
-    $csv = fopen($csvPath.'Book1.csv','r');
+    $csv = fopen($csvPath.$csvFile,'r');
     while (($data = fgetcsv($csv)) !== FALSE) {
       $data = str_replace("\xEF\xBB\xBF",'',$data); 
       if($data[9] === 'break'){
@@ -859,7 +863,7 @@ function getDescription($dir){
       }
     }
 
-    $csv = fopen($csvPath.'Book1.csv','r');
+    $csv = fopen($csvPath.$csvFile,'r');
     while (($data = fgetcsv($csv)) !== FALSE) {
       $data = str_replace("\xEF\xBB\xBF",'',$data); 
 
@@ -874,7 +878,7 @@ function getDescription($dir){
 
 }
 
-function getSizeTable($dir){
+function getSizeTable($dir,$csvFile){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
 
     echo '<div class="detail-description__size-table u-margin-bottom-small">
@@ -892,7 +896,7 @@ function getSizeTable($dir){
 
      <tr>';
 
-    $csv = fopen($csvPath.'Book1.csv','r');
+    $csv = fopen($csvPath.$csvFile,'r');
     while (($data = fgetcsv($csv)) !== FALSE) {
       $data = str_replace("\xEF\xBB\xBF",'',$data); 
       if($data[11] === 'break'){
@@ -915,7 +919,7 @@ echo '</table>
       </tr>
       <tr>';
 
-    $csv = fopen($csvPath.'Book1.csv','r');
+    $csv = fopen($csvPath.$csvFile,'r');
     while (($data = fgetcsv($csv)) !== FALSE) {
       $data = str_replace("\xEF\xBB\xBF",'',$data); 
       if($data[12] === 'break'){
@@ -934,11 +938,11 @@ echo '
   fclose($csv);
 }
 
-function getDescription2($dir){
+function getDescription2($dir,$csvFile){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
 
   echo '<div class="detail-description__text">';
-    $csv = fopen($csvPath.'Book1.csv','r');
+    $csv = fopen($csvPath.$csvFile,'r');
     while (($data = fgetcsv($csv)) !== FALSE) {
       $data = str_replace("\xEF\xBB\xBF",'',$data); 
       if($data[13] === 'break'){
@@ -951,11 +955,11 @@ function getDescription2($dir){
   fclose($csv);
 }
 
-function  getItemPick($dir){
+function  getItemPick($dir,$csvFile){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
 
   echo '<div class="item__pick">';
-  $csv = fopen($csvPath.'Book1.csv','r');
+  $csv = fopen($csvPath.$csvFile,'r');
   while (($data = fgetcsv($csv)) !== FALSE) {
     $data = str_replace("\xEF\xBB\xBF",'',$data); 
     if($data[0] === 'break'){
@@ -976,11 +980,11 @@ echo '</div>';
 fclose($csv);
 }
 
-function  getItemColorPicker($dir){
+function  getItemColorPicker($dir,$csvFile){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
 
   echo '<div class="item__color">';
-  $csv = fopen($csvPath.'Book1.csv','r');
+  $csv = fopen($csvPath.$csvFile,'r');
   while (($data = fgetcsv($csv)) !== FALSE) {
     $data = str_replace("\xEF\xBB\xBF",'',$data); 
     if($data[0] === 'break'){
@@ -997,14 +1001,14 @@ echo '</div>';
 fclose($csv);
 }
 
-function getItemSection($dir,$gender,$otherURL){
+function getItemSection($dir,$csvFile,$gender,$otherURL){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
-$fileName = $csvPath.'Book1.csv';
+$fileName = $csvPath.$csvFile;
 if ( file_exists($fileName) && ($fp = fopen($fileName, "rb"))!==false  ) {
 	$gender = strtolower($gender);
 
   echo '<section class="item__section-detail underNav">';
-  getGallery($dir);
+  getGallery($dir,$csvFile);
 echo '   <div class="detail-description">
 <div class="detail-description__gender u-margin-bottom-small">';
 
@@ -1012,16 +1016,16 @@ if($gender === 'unisex'){
   echo '<a class="gender-btn"><button class="btn--gray detail-description__gender-btn">UNISEX</button></a>';
 } else if($gender === 'men') {
   echo "<a class='gender-btn'><button class='btn--gray detail-description__gender-btn'>MEN</button></a>";
-  echo "<a class='gender-btn' href='".$otherURL."'><button class='btn--gray btn--gray-light detail-description__gender-btn'>WOMEN</button></a>";
+  echo "<a class='gender-btn' href='".$otherURL."'><button class='btn--gray btn--gray-light detail-description__gender-btn' style='box-shadow: 2px 1000px #C8C8C8 inset !important;'>WOMEN</button></a>";
 } else if($gender === 'women') {
-  echo "<a class='gender-btn' href='".$otherURL."'><button class='btn--gray btn--gray-light  detail-description__gender-btn'>MEN</button></a>";
+  echo "<a class='gender-btn' href='".$otherURL."'><button class='btn--gray btn--gray-light  detail-description__gender-btn' style='box-shadow: 2px 1000px #C8C8C8 inset !important;'>MEN</button></a>";
   echo "<a class='gender-btn'><button class='btn--gray detail-description__gender-btn'>WOMEN</button></a>";
 } 
 
 echo '</div>';
-getDescription($dir);
-getSizeTable($dir);
-getDescription2($dir);
+getDescription($dir,$csvFile);
+getSizeTable($dir,$csvFile);
+getDescription2($dir,$csvFile);
 echo '<div class="shareToSocial">
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script
@@ -1034,8 +1038,8 @@ echo '<div class="shareToSocial">
 </div>
 </section>
 <section class="item__section-color u-margin-bottom-medium">';
-getItemPick($dir);
-getItemColorPicker($dir);
+getItemPick($dir,$csvFile);
+getItemColorPicker($dir,$csvFile);
 }
   else
   {
@@ -1045,13 +1049,13 @@ getItemColorPicker($dir);
 echo '</section>';
 }
 
-function getProductSection($dir,$seemore){
+function getProductSection($dir,$csvFile,$seemore){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
-$fileName = $csvPath.'Book1.csv';
+$fileName = $csvPath.$csvFile;
 if ( file_exists($fileName) && ($fp = fopen($fileName, "rb"))!==false  ) {
     $csv = fopen($fileName,'r');
 
-    echo '<section class="section-product u-margin-bottom-medium" id="tshirt">
+	echo '<section class="section-product u-margin-top-medium u-margin-bottom-medium" id="tshirt">
     <div class="container header section-product__header">
       <div class="row">
         <div class="col-sm-12 col-md-12">';
@@ -1063,7 +1067,7 @@ if ( file_exists($fileName) && ($fp = fopen($fileName, "rb"))!==false  ) {
             break;
             } else{
              echo '<h2 class="heading-primary ">'.$data[6].'</h2>
-              <h3 lang="th" class="heading-secondary">'.$data[7].'</h3>';
+              <h3 class="heading-secondary">'.$data[7].'</h3>';
             }
           }
   echo '
@@ -1127,18 +1131,18 @@ echo '
 fclose($csv);
 }
 
-function getProject($dir,$primary,$secondary){
+function getProject($dir,$csvFile,$primary,$secondary){
 	$csvPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
-$fileName = $csvPath.'Book1.csv';
+$fileName = $csvPath.$csvFile;
 if ( file_exists($fileName) && ($fp = fopen($fileName, "rb"))!==false  ) {
     $csv = fopen($fileName,'r');
 
-    echo '<section class="home__section-project u-margin-bottom-small">
+    echo '<section class="home__section-project u-margin-bottom-small u-margin-top-big">
     <div class="container header">
     <div class="row">
       <div class="col-sm-12 col-md-12">
         <h2 class="heading-primary ">'.$primary.'</h2>
-        <h3 lang="th" class="heading-secondary">'.$secondary.'</h3>
+        <h3 class="heading-secondary">'.$secondary.'</h3>
       </div>
     </div>
   </div>
@@ -1171,4 +1175,247 @@ if ( file_exists($fileName) && ($fp = fopen($fileName, "rb"))!==false  ) {
     }
 
 fclose($csv);
+}
+
+function itemPage($dir,$jsonFile){
+	$jsonPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
+$fileName = $jsonPath.$jsonFile;
+$data = file_get_contents($fileName);
+if($fileName && $data){
+	$dataDecode = json_decode($data,true);
+	echo '<section class="item__section-detail underNav">
+
+	<div class="swiper-container gallery-thumbs detail-thumb">
+	<div class="swiper-wrapper detail-thumb__wrapper">';
+
+	$gallery = $dataDecode["gallery"];
+	$defaultGallery = $gallery[0];
+	foreach($defaultGallery["img"] as $index=>$img){
+		echo '<div class="swiper-slide detail-thumb__slide" id="default-thumb-'.$index.'">';
+		getImg($dir,$img,"detail-thumb__img");
+		echo '</div>';
+	}
+	echo '</div>
+	</div>';
+
+	echo '<div class="swiper-container gallery-top detail-top">
+	<div class="swiper-wrapper detail-top__wrapper">';
+	foreach($defaultGallery["img"] as $index=>$img){
+		echo '<div class="swiper-slide detail-top__slide" id="default-top-'.$index.'">';
+			getImg($dir,$img,'detail-top__img');
+		echo '</div>';
+	}
+	echo '</div>
+	<div class="swiper-pagination"></div>
+	</div>
+
+	<div class="detail-description">
+	<div class="detail-description__gender u-margin-bottom-small">';
+
+	$detail = $dataDecode["detail"];
+	$gender = $detail["sex"];
+if($gender === "unisex"){
+	echo '<p class="gender-unisex">UNISEX</p>';
+} else if($gender === "men"){
+	echo "<a class='gender-btn'><button class='btn--gray detail-description__gender-btn'>MEN</button></a>
+	<a class='gender-btn' href='".$detail["otherLink"]."'><button class='btn--gray btn--gray-light detail-description__gender-btn' style='box-shadow: 2px 1000px #C8C8C8 inset !important;'>WOMEN</button></a>
+	";
+} else if($gender === "women"){
+	echo "<a class='gender-btn' href='".$detail["otherLink"]."'><button class='btn--gray btn--gray-light  detail-description__gender-btn' style='box-shadow: 2px 1000px #C8C8C8 inset !important;'>MEN</button></a>
+	<a class='gender-btn'><button class='btn--gray detail-description__gender-btn'>WOMEN</button></a>";
+}
+echo '</div>
+<div class="detail-description__text">
+<h2 class="heading-primary">'.$detail["productName"].'</h2>
+';
+foreach($detail['para1'] as $para){
+	echo '<p>'.$para.'</p>';
+}
+echo '</div>
+<div class="detail-description__size-table u-margin-bottom-small">
+	<div class="detail-description__size-table__measure">
+	<p id="colorName1">'.$defaultGallery["colorName"].'</p>
+	<p id="colorNameTH1">'.$defaultGallery["colorNameTH"].'</p>
+      <button class="btn--gray detail-description__size-table__measure__cm btn--gray-light">CM</button>
+      <button class="btn--gray detail-description__size-table__measure__inc">INC</button>
+	</div>
+	
+
+    <table class="detail-description__size-table__cm">
+      <tr>
+        <th>ไซส์<br />Size</th>
+        <th>รอบอก<br />Chest</th>
+        <th>ความยาว<br />Length</th>
+        <th>ราคา<br />Price</th>
+      </tr>
+	 <tr>';
+	 foreach($detail["sizeCM"] as $cmRow){
+		 foreach($cmRow as $cmColumn){
+			 echo '<td>'.$cmColumn.'</td>';
+		 }
+		 echo '</tr>';
+	 }
+echo '</table>
+
+
+<table class="detail-description__size-table__inc">
+  <tr>
+	<th>ไซส์<br />Size</th>
+	<th>รอบอก<br />Chest</th>
+	<th>ความยาว<br />Length</th>
+	<th>ราคา<br />Price</th>
+  </tr>
+  <tr>';
+  foreach($detail["sizeINC"] as $incRow){
+	foreach($incRow as $index=>$incColumn){
+		
+if($index == 1 || $index == 2){
+	echo '<td>'.$incColumn.'"</td>';
+} else{
+	echo '<td>'.$incColumn.'</td>';
+}
+	}
+	echo '</tr>';
+  }
+  echo '</table>
+
+
+  </div>
+ <div class="detail-description__text">';
+ foreach($detail["para2"] as $para){
+	 echo '<p>'.$para.'</p>';
+ }
+ echo '</div>
+<div class="detail-socialmedia u-margin-bottom-medium u-margin-top-medium">
+
+<h1 class="detail-socialmedia-header">สนใจสินค้า กดติดต่อเจ้าหน้าที่</h1>
+
+<a href="https://line.me/ti/p/~nicknoproblem" target="_blank">
+ <div class="detail-socialmedia-button btn-shadow btn-line">
+ <i class="fab fa-line"></i><label>Line</label>
+ </div>
+</a>
+
+<a href="https://wa.me/66817741166" target="_blank">
+ <div class="detail-socialmedia-button btn-shadow btn-whatsapp">
+ <i class="fab fa-whatsapp"></i><label>WhatsApp</label>
+ </div>
+</a>
+<a href="https://www.facebook.com/130047820416542/" target="_blank">
+ <div class="detail-socialmedia-button btn-shadow btn-facebook">
+ <i class="fab fa-facebook-f"></i><label>Facebook</label>
+ </div>
+</a>
+
+<a href="https://m.me/Noproblemtshirt/" target="_blank">
+ <div class="detail-socialmedia-button btn-shadow btn-messenger">
+ <i class="fab fa-facebook-messenger"></i><label>Messenger</label>
+ </div>
+</a>
+
+<a href="'.$_SERVER['HTTP_HOST'].'/qr" target="_blank">
+ <div class="detail-socialmedia-button btn-shadow btn-wechat">
+ <i class="fab fa-weixin"></i><label>WeChat</label>
+ </div>
+</a>
+
+</div>';
+
+
+echo '<div class="item__section-color">
+<p id="colorName2">'.$defaultGallery["colorName"].'</p>
+<p id="colorNameTH2">'.$defaultGallery["colorNameTH"].'</p>
+<div class="item__color">';
+
+foreach($gallery as $color){
+	echo '<div class="item__color-picker '.$color["colorClass"].'">';
+		getImg($dir,$color["colorPick"],'item__color-picker__img');
+
+	echo '</div>';
+}
+echo '
+</div>
+</div>
+</section>';
+
+echo '<section class="item__preload">';
+foreach($gallery as $color){
+	echo '<div class="item__preload-container '.$color['colorClass'].'">
+	<p class="item__preload-colorName">'.$color['colorName'].'</p>
+	<p class="item__preload-colorName-th">'.$color['colorNameTH'].'</p>
+	';
+	foreach($color['img'] as $img){
+		getImg($dir,$img,'item__preload__img');
+	}
+	echo '</div>';
+}
+echo '</section>';
+
+} else{
+	echo "error from itemPage function<br> cannot read file: ".$fileName." or file does not exsit";
+}
+}
+function clothSlide($dir,$jsonFile,$seemore){
+	$jsonPath = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/twentytwenty/assets/images'.$dir;
+	$fileName = $jsonPath.$jsonFile;
+	$data = file_get_contents($fileName);
+	if($fileName && $data){
+		$dataDecode = json_decode($data,true);
+
+		echo '<section class="section-product u-margin-top-medium u-margin-bottom-medium">
+		<div class="container header section-product__header">
+		<div class="row">
+		<div class="col-sm-12 col-md-12">';
+		
+		$slide = $dataDecode["slide"];
+		echo '<h2 class="heading-primary ">'.$slide["productName"].'</h2>
+		<h3 class="heading-secondary">'.$slide["secondName"].'</h3>
+		</div>
+		</div>
+		</div>
+		<div class="swiper-container swiper-container__slide3">
+		<div class="swiper-wrapper swiper-wrapper__slide3">';
+
+		foreach($slide["items"] as $item){
+
+			echo '<div class="swiper-slide swiper-slide__slide3">
+			<a href="'.$item["link"].'?color='.$item["colorClass"].'">
+			<div class="cloth">';
+			getImg($dir,$item["front"],'cloth__img');
+			getImg($dir,$item["back"],'cloth__img');
+
+			echo '
+			</div>
+			<div class="cloth__price">
+			<h2 class="cloth__price-header">'.$item["firstDes"].'</h2>
+			<p class="cloth__price-description">'.$item["secondDes"].'</p>
+			<p class="cloth__price-tag">'.$item["price"].'</p>
+			</div>
+			</a>
+			</div>';
+		}
+		echo '</div>
+		<div class="swiper-button-next swiper-slide__slide3__button-right"></div>
+		<div class="swiper-button-prev swiper-slide__slide3__button-left"></div>';
+
+		$seemore = strtolower($seemore);
+		if($seemore == 'seemore'){
+		  echo '<div class="seemore">
+		  <div class="seemore__more">
+			<p class="seemore__text-more">สินค้าทั้งหมด</p>
+			<i class="seemore__icon-more fas fa-chevron-down"></i>
+		  </div>
+		  <div class="seemore__less">
+			<p class="seemore__text-more">แสดงน้อยลง</p>
+			<i class="seemore__icon-more fas fa-chevron-up"></i>
+		  </div>
+		</div>';
+		}
+		echo "
+		</div>
+		</section>";
+
+	} else {
+		echo "error from clothSlide function<br> cannot read file: ".$fileName." or file does not exsit";
+	}
 }

@@ -107,12 +107,12 @@ blockquote::after {
 html {
   font-size: 62.5%;
   /* 1rem = 10px */
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
-    scroll-behavior: auto;
+    /* scroll-behavior: auto; */
   }
 }
 
@@ -1737,8 +1737,10 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
 
 .secondTitle {
   display: block;
+  font-size:15px;
+  
 }
-@media only screean and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .secondTitle {
     display: inline;
   }
@@ -6407,6 +6409,7 @@ ul.primary-menu {
   font-size: 2rem;
   display: block;
   padding: 1.6rem 3.7rem;
+  text-align:center;
 }
 
 .header-navigation-wrapper .primary-menu-wrapper .primary-menu > li:hover,
@@ -6845,6 +6848,11 @@ figure.wp-block-image {
   top: 38% !important;
 }
 
+.swiper-slide__slide3__button-right:focus,
+.swiper-slide__slide3__button-left:focus {
+  outline:none;
+}
+
 .swiper-slide__slide3__button-left {
   left: 0 !important;
 }
@@ -6872,6 +6880,39 @@ figure.wp-block-image {
 .seemore {
   text-align: center;
   cursor: pointer;
+}
+
+.open.fixed{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  z-index: 500;
+  background-color: white;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+
+.seemore__less-fixed{
+  padding-bottom:5px;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  z-index: 500;
+  background-color: red;
+  width: 100%;
+
+  visibility: hidden;
+opacity:0;
+display:none;
+}
+
+
+
+.seemore.open .seemore__less-fixed.show{
+  visibility: visible;
+  opacity:1;
+  display:block;
 }
 
 .seemore__text-more {
@@ -7166,6 +7207,10 @@ figure.wp-block-image {
   .detail-socialmedia {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.detail-socialmedia-header{
+  grid-column: 1/4;
 }
 
 .detail-socialmedia-button {
@@ -7956,7 +8001,7 @@ input.socialmedia__checkbox {
   margin-bottom: 0;
 }
 
-.footer__socials {
+.footer__socialsMedia {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr) [2] 2fr;
@@ -7965,7 +8010,7 @@ input.socialmedia__checkbox {
 }
 
 @media only screen and (max-width: 37.5em) {
-  .footer__socials {
+  .footer__socialsMedia {
     border-left: none;
     -ms-grid-rows: (1fr) [2] 2fr;
     grid-template-rows: repeat(2, 1fr) 2fr;
@@ -7974,7 +8019,7 @@ input.socialmedia__checkbox {
   }
 }
 
-.footer__social {
+.footer__socialMedia {
   padding: 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7988,12 +8033,12 @@ input.socialmedia__checkbox {
 }
 
 @media only screen and (max-width: 37.5em) {
-  .footer__social {
+  .footer__socialMedia {
     padding: 0 2rem;
   }
 }
 
-.footer__social-2 {
+.footer__socialMedia-2 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr [5];
@@ -8002,7 +8047,7 @@ input.socialmedia__checkbox {
 }
 
 @media only screen and (max-width: 37.5em) {
-  .footer__social-2 {
+  .footer__socialMedia-2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8013,20 +8058,20 @@ input.socialmedia__checkbox {
   }
 }
 
-.footer__social-2 img,
-.footer__social-wechat img {
+.footer__socialMedia-2 img,
+.footer__socialMedia-wechat img {
   width: 50px;
   border-radius: 90%;
 }
 
 @media only screen and (min-width: 156.25em) {
-  .footer__social-2 img,
-  .footer__social-wechat img {
+  .footer__socialMedia-2 img,
+  .footer__socialMedia-wechat img {
     width: 70px;
   }
 }
 
-.footer__social-wechat {
+.footer__socialMedia-wechat {
   /* margin-top: 5px; */
   /* display: -ms-grid;
   display: grid;
@@ -8035,7 +8080,7 @@ input.socialmedia__checkbox {
 }
 
 @media only screen and (max-width: 42.5em) {
-  .footer__social-wechat {
+  .footer__socialMedia-wechat {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8044,7 +8089,7 @@ input.socialmedia__checkbox {
     justify-content: center;
     margin-bottom: 5px;
   }
-  .footer__social-wechat a {
+  .footer__socialMedia-wechat a {
     margin-right: 5px;
   }
 }
@@ -8057,8 +8102,8 @@ input.socialmedia__checkbox {
   width: fit-content;
 }
 
-.footer__social-3,
-.footer__social-4 {
+.footer__socialMedia-3,
+.footer__socialMedia-4 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% 80%;
@@ -8067,8 +8112,8 @@ input.socialmedia__checkbox {
   margin-top: 10px;
 }
 @media only screen and (max-width: 37.5em) {
-  .footer__social-3,
-  .footer__social-4 {
+  .footer__socialMedia-3,
+  .footer__socialMedia-4 {
     grid-column-gap: 10px;
   }
 }
