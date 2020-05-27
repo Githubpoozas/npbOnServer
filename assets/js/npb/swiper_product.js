@@ -24,8 +24,8 @@ jQuery(document).ready(function () {
     },
   })
   jQuery(".seemore__less").hide()
-  jQuery(".seemore__less-fixed").removeClass("show")
 
+  
   jQuery(".swiper-container__slide3 .seemore").click(function () {
     var mySwiper = jQuery(this).parent()[0].swiper
 
@@ -62,7 +62,6 @@ jQuery(document).ready(function () {
 
       jQuery(this).parent().find(".seemore__more").hide()
       jQuery(this).parent().find(".seemore__less").show()
-      jQuery(".seemore__less-fixed").addClass("show")
 
       if (windowSize >= 900) {
         jQuery(this)
@@ -103,7 +102,6 @@ jQuery(document).ready(function () {
 
       jQuery(this).parent().find(".seemore__more").show()
       jQuery(this).parent().find(".seemore__less").hide()
-      jQuery(this).parent().find(".seemore__less-fixed").hide()
 
       if (windowSize >= 900) {
         jQuery(this)
@@ -140,33 +138,12 @@ jQuery(document).ready(function () {
     }, 6000)
   }
 
-  // on load hide .seemore if last slide already in viewpoint
-  function seemoreHide() {
-    var slideWidth = jQuery(".swiper-slide__slide3").outerWidth(true)
-    var windowWidth = jQuery(window).width()
-    jQuery(".swiper-wrapper__slide3").each(function () {
-      var lastSlide = jQuery(this).find(".swiper-slide__slide3").length - 1
-      var lastSlidePosition =
-        jQuery(this).find(".swiper-slide__slide3").eq(lastSlide).offset().left +
-        slideWidth
-      if (
-        lastSlidePosition <= windowWidth &&
-        jQuery(this).parent().find(".seemore__more").is(":visible") &&
-        jQuery(this).css("flex-wrap", "nowrap")
-      ) {
-        jQuery(this).parent().find(".seemore").hide()
-      } else if (
-        lastSlidePosition > windowWidth &&
-        jQuery(this).parent().find(".seemore__more").is(":hidden") &&
-        jQuery(this).css("flex-wrap", "nowrap")
-      ) {
-        jQuery(this).parent().find(".seemore").show()
-      }
-    })
-  }
-  seemoreHide()
+  // collapese all if resize
   jQuery(window).resize(function () {
-    seemoreHide()
+
+    if(jQuery(".seemore").hasClass("open")){
+    jQuery( ".seemore" ).trigger( "click" );
+    }
   })
 
 })
