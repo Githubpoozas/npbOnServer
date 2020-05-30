@@ -25,7 +25,6 @@ jQuery(document).ready(function () {
   })
   jQuery(".seemore__less").hide()
 
-  
   jQuery(".swiper-container__slide3 .seemore").click(function () {
     var mySwiper = jQuery(this).parent()[0].swiper
 
@@ -138,20 +137,18 @@ jQuery(document).ready(function () {
     }, 6000)
   }
 
-  // collapese all if resize
+  // collapse all if resize
   jQuery(window).resize(function () {
-
-    if(jQuery(".seemore").hasClass("open")){
-    jQuery( ".seemore" ).trigger( "click" );
+    if (jQuery(".seemore__less").is(":visible")) {
+      jQuery(".seemore__less:visible").parent().trigger("click")
     }
   })
-
 })
 
 // check positon of seemore
 window.addEventListener("scroll", () => {
   let seemore = document.getElementsByClassName("seemore open")
-  let windowBottom = window.innerHeight;
+  let windowBottom = window.innerHeight
 
   for (let i = 0; i < seemore.length; i++) {
     let wrapperBound = seemore[
@@ -167,7 +164,10 @@ window.addEventListener("scroll", () => {
         seemore[i].classList.remove("fixed")
       }
     } else {
-      if(windowBottom <= seemoreBound.bottom && wrapperBound.top <= windowBottom){
+      if (
+        windowBottom <= seemoreBound.bottom &&
+        wrapperBound.top <= windowBottom
+      ) {
         seemore[i].classList.add("fixed")
       }
     }
